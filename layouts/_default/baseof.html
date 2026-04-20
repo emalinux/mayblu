@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <title>{{ .Title }}</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400&family=La+Belle+Aurore&display=swap">
 </head>
 
 <body>
 
-  {{ block "main" . }}{{ end }}
-
+  {{ block "main" . }} {{ end }}
+  {{ partial "header.html" . }}
+  {{ partial "footer.html" . }}
 </body>
 </html>

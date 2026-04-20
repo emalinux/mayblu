@@ -1,0 +1,38 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#070B14"/>
+
+  <defs>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(420 240) rotate(35) scale(520 320)">
+      <stop stop-color="#244A7A" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#244A7A" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(1180 220) rotate(-12) scale(400 260)">
+      <stop stop-color="#8C6A3B" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#8C6A3B" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="g3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(980 690) rotate(15) scale(620 340)">
+      <stop stop-color="#1E2D52" stop-opacity="0.60"/>
+      <stop offset="1" stop-color="#1E2D52" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="blurSoft">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#g1)"/>
+  <rect width="1600" height="900" fill="url(#g2)"/>
+  <rect width="1600" height="900" fill="url(#g3)"/>
+
+  <g opacity="0.16" filter="url(#blurSoft)">
+    <path d="M210 740C300 640 420 580 540 610C660 640 735 735 810 760C900 790 1010 760 1100 680"
+      stroke="#D8C3A3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M320 180C395 125 490 115 560 155C625 192 660 268 730 300"
+      stroke="#A9BFE3" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>
