@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<section class="books-page">
+
+  <div class="books-page-inner">
+
+    <h1>I miei libri</h1>
+
+    <div class="books-grid">
+
+      {{ range .Pages }}
+
+      <a href="{{ .RelPermalink }}" class="book-card">
+
+        <img src="{{ .Params.cover }}" alt="{{ .Title }}">
+
+        <h3>{{ .Title }}</h3>
+
+        <p>{{ .Params.short }}</p>
+
+      </a>
+
+      {{ end }}
+
+    </div>
+
+  </div>
+
+</section>
+
+{{ end }}

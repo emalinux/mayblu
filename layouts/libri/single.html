@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<section class="book-single">
+
+  <div class="book-single-inner">
+
+    <div class="book-cover">
+      <img src="{{ .Params.cover }}" alt="{{ .Title }}">
+    </div>
+
+    <div class="book-content">
+      <h1>{{ .Title }}</h1>
+
+      <p>{{ .Content }}</p>
+
+      <a href="#" class="btn">Acquista</a>
+    </div>
+
+  </div>
+
+</section>
+
+{{ end }}
