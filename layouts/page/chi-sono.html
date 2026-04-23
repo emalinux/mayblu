@@ -1,37 +1,28 @@
 {{ define "main" }}
 
-<section class="about-page">
+<section class="page-about">
 
-  <div class="about-page-inner">
+  <div class="container">
 
-    <div class="about-page-text">
+    <h1>Chi sono</h1>
+    <p class="subtitle">
+      Un percorso personale che è diventato strumento di aiuto per gli altri.
+    </p>
 
-      <h1>Chi sono</h1>
+    <div class="about-long">
 
-      <p>
-        Mi chiamo Maura Balocco, sono Dott.ssa in Psicologia Clinica.
-        Il mio percorso nasce da un’esperienza personale profonda che mi ha portata
-        a trasformare la paura in uno strumento di comprensione.
-      </p>
+      <div class="about-text">
+        {{ .Content }}
+      </div>
 
-      <p>
-        Il mio lavoro unisce psicologia, biogenealogia e lettura inconscia del sintomo,
-        con l’obiettivo di accompagnare le persone verso una maggiore consapevolezza.
-      </p>
-
-      <p>
-        Ciò che mi guida è una ricerca continua: comprendere i meccanismi interiori
-        per restituire strumenti concreti di trasformazione.
-      </p>
-
+      <div class="about-side">
+        <img src="/img/maura.png" alt="Maura Balocco">
+      </div>
+      
     </div>
-
-    <div class="about-page-image">
-      <img src="/img/maura.png" alt="Maura Balocco">
-    </div>
-
+    <a href="#" class="btn">Prenota un  colloquio</a>
   </div>
-
+  
 </section>
 
 {{ end }}
