@@ -3,7 +3,7 @@ title: "Chi sono"
 layout: "chi-sono"
 ---
 
-# MAURA BALOCCO - "mayblu"
+# MAURA BALOCCO "mayblu"
 
 Mi chiamo Maura Balocco, sono nata ad Alba nel 1977, Dott.ssa in Psicologia Clinica laureata
 all’Università di Torino nell’anno 2014, (Albo Psicologi Piemonte n. 7987).

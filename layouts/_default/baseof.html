@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ .Title }}</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400&family=La+Belle+Aurore&display=swap">
 </head>
@@ -16,6 +22,30 @@
   </main>
 
   {{ partial "footer.html" . }}
+  
+<button id="backToTop">↑</button>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("backToTop");
+
+  if (!btn) return; // 🔥 evita crash
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
+</script>
 </body>
 </html>

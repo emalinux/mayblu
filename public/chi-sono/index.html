@@ -3,6 +3,12 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <title>Chi sono</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400&family=La+Belle+Aurore&display=swap">
 </head>
@@ -14,7 +20,9 @@
   <div class="header-inner">
 
     <div class="logo">
-      <img src="/img/rossolog.webp" alt="logo">
+      <a href="/">
+        <img src="/img/rossolog.webp" alt="logo">
+      </a>
     </div>
 
     <nav class="main-nav">
@@ -55,7 +63,7 @@
     <div class="about-long">
 
       <div class="about-text">
-        <h1 id="maura-balocco---mayblu">MAURA BALOCCO - &ldquo;mayblu&rdquo;</h1>
+        <h1 id="maura-balocco-mayblu">MAURA BALOCCO &ldquo;mayblu&rdquo;</h1>
 <p>Mi chiamo Maura Balocco, sono nata ad Alba nel 1977, Dott.ssa in Psicologia Clinica laureata
 all’Università di Torino nell’anno 2014, (Albo Psicologi Piemonte n. 7987).</p>
 <p>Il mio percorso è stato eclettico ed intuitivo e nasce a seguito dell’esigenza di trasmettere agli altri il
@@ -73,11 +81,13 @@ paura in uno strumento di aiuto potente.</p>
       <div class="about-side">
         <img src="/img/maura.png" alt="Maura Balocco">
       </div>
-      
+        </div>
+          <a href="/contatti" class="btn">Prenota un  colloquio</a>
+        </div>
     </div>
-    <a href="#" class="btn">Prenota un  colloquio</a>
+    
   </div>
-  
+
 </section>
 
 
@@ -87,7 +97,11 @@ paura in uno strumento di aiuto potente.</p>
 
   <div class="footer-inner">
 
-    <img src="/img/rossolog.webp" class="footer-logo">
+    <div class="logo">
+      <a href="/">
+        <img src="/img/rossolog.webp" alt="logo">
+      </a>
+    </div>
 
     <p class="footer-brand">Maura Balocco</p>
 
@@ -117,6 +131,30 @@ paura in uno strumento di aiuto potente.</p>
   </div>
 
 </footer>
+  
+<button id="backToTop">↑</button>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("backToTop");
+
+  if (!btn) return; 
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
+</script>
 </body>
 </html>

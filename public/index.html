@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-	<meta name="generator" content="Hugo 0.148.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.147.9"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <title>My New Hugo Site</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400&family=La+Belle+Aurore&display=swap">
 </head>
@@ -15,7 +21,9 @@
   <div class="header-inner">
 
     <div class="logo">
-      <img src="/img/rossolog.webp" alt="logo">
+      <a href="/">
+        <img src="/img/rossolog.webp" alt="logo">
+      </a>
     </div>
 
     <nav class="main-nav">
@@ -77,12 +85,12 @@
 
         <p>
           <p>
-Mi chiamo Maura Balocco, sono Dott.ssa in Psicologia Clinica e il mio percorso nasce da un’esperienza personale intensa, che ha dato origine a una profonda trasformazione interiore. 
+Mi chiamo Maura Balocco, sono Dott.ssa in Psicologia Clinica e il mio percorso nasce da un’esperienza personale intensa, che ha dato origine a una profonda trasformazione interiore. <br>
 
-Nel tempo ho scelto di orientare i miei studi e la mia ricerca verso una comprensione autentica dell’essere umano, esplorando il legame tra mente, emozioni e corpo. 
+Nel tempo ho scelto di orientare i miei studi e la mia ricerca verso una comprensione autentica dell’essere umano, esplorando il legame tra mente, emozioni e corpo. <br>
 
 
-Da qui nasce il mio approccio: un cammino che integra esperienza, intuizione e ascolto, per accompagnare ogni persona verso un equilibrio più profondo e duraturo.
+<p>Da qui nasce il mio approccio: un cammino che integra esperienza, intuizione e ascolto, per accompagnare ogni persona verso un equilibrio più profondo e duraturo.
 </p>
 
   <a href="/chi-sono" class="btn-about">
@@ -238,7 +246,11 @@ Da qui nasce il mio approccio: un cammino che integra esperienza, intuizione e a
 
   <div class="footer-inner">
 
-    <img src="/img/rossolog.webp" class="footer-logo">
+    <div class="logo">
+      <a href="/">
+        <img src="/img/rossolog.webp" alt="logo">
+      </a>
+    </div>
 
     <p class="footer-brand">Maura Balocco</p>
 
@@ -268,6 +280,30 @@ Da qui nasce il mio approccio: un cammino che integra esperienza, intuizione e a
   </div>
 
 </footer>
+  
+<button id="backToTop">↑</button>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("backToTop");
+
+  if (!btn) return; 
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
+</script>
 </body>
 </html>

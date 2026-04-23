@@ -3,6 +3,12 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <title>Quando il sangue si esprime attraverso il segreto</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400&family=La+Belle+Aurore&display=swap">
 </head>
@@ -14,7 +20,9 @@
   <div class="header-inner">
 
     <div class="logo">
-      <img src="/img/rossolog.webp" alt="logo">
+      <a href="/">
+        <img src="/img/rossolog.webp" alt="logo">
+      </a>
     </div>
 
     <nav class="main-nav">
@@ -40,7 +48,8 @@
 
 </header>
 
-  
+  <main class="page-wrapper">
+    
 
 <section class="book-single">
 
@@ -64,12 +73,17 @@
 </section>
 
 
+  </main>
 
   <footer class="site-footer">
 
   <div class="footer-inner">
 
-    <img src="/img/rossolog.webp" class="footer-logo">
+    <div class="logo">
+      <a href="/">
+        <img src="/img/rossolog.webp" alt="logo">
+      </a>
+    </div>
 
     <p class="footer-brand">Maura Balocco</p>
 
@@ -99,6 +113,24 @@
   </div>
 
 </footer>
+  <script>
+  const btn = document.getElementById("backToTop");
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+ <button id="backToTop">↑</button>
 </body>
 </html>
