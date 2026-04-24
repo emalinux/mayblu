@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-	<meta name="generator" content="Hugo 0.148.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.147.9"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <title>My New Hugo Site</title>
   <link rel="icon" href="/favicon.ico">
@@ -28,20 +28,20 @@
 
     <nav class="main-nav">
       <a href="/chi-sono">Chi sono</a>
-      <a href="#metodo">Metodo</a>
+      <a href="/metodo">Metodo</a>
 
       <div class="dropdown">
         <a href="/libri/" class="dropdown-trigger">Libri</a>
 
         <div class="dropdown-menu">
-          <a href="#">Quando il sangue si esprime atraverso il Segreto</a>
-          <a href="#">Oltre Sangue e Segreto</a>
-          <a href="#">Sangue e Segreto</a>
-          <a href="#">Il linguaggio degli uccelli</a>
+          <a href="/libri/sangue-segreto/">Quando il sangue si esprime attraverso il Segreto</a>
+          <a href="/libri/oltre-sangue/">Oltre Sangue e Segreto</a>
+          <a href="/libri/sangue-e-segreto/">Sangue e Segreto</a>
+          <a href="/libri/il-linguaggio-degli-uccelli/">Il linguaggio degli uccelli</a>
         </div>
       </div>
 
-      <a href="#contatti">Contatti</a>
+      <a href="/contatti">Contatti</a>
 
     </nav>
 
@@ -282,6 +282,18 @@ Nel tempo ho scelto di orientare i miei studi e la mia ricerca verso una compren
 </footer>
   
 <button id="backToTop">↑</button>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('show');
+  });
+}, { threshold: 0.15 });
+
+reveals.forEach(el => obs.observe(el));
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {

@@ -6,4 +6,7 @@ excerpt: "La gravidanza: Trovate al link il contenuto del paragrafo dedicato all
 weight: 2
 ---
 
-Testo del libro (può essere placeholder ora).
+La gravidanza: Trovate al link il contenuto del paragrafo dedicato alla
+gravidanza, per conoscere risvolti legati al concepimento e alla
+formazione del feto nel ventre materno. Nel libro si tratta la vita e la
+morte. (Pp. 35)

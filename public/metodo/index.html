@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400&family=La+Belle+Aurore&display=swap">
 </head>
 
-<body class="kind-page page-metodo">
+<body class="kind-section page-_index section-metodo">
 
   <header class="site-header">
 
@@ -27,20 +27,20 @@
 
     <nav class="main-nav">
       <a href="/chi-sono">Chi sono</a>
-      <a href="#metodo">Metodo</a>
+      <a href="/metodo">Metodo</a>
 
       <div class="dropdown">
         <a href="/libri/" class="dropdown-trigger">Libri</a>
 
         <div class="dropdown-menu">
-          <a href="#">Quando il sangue si esprime atraverso il Segreto</a>
-          <a href="#">Oltre Sangue e Segreto</a>
-          <a href="#">Sangue e Segreto</a>
-          <a href="#">Il linguaggio degli uccelli</a>
+          <a href="/libri/sangue-segreto/">Quando il sangue si esprime attraverso il Segreto</a>
+          <a href="/libri/oltre-sangue/">Oltre Sangue e Segreto</a>
+          <a href="/libri/sangue-e-segreto/">Sangue e Segreto</a>
+          <a href="/libri/il-linguaggio-degli-uccelli/">Il linguaggio degli uccelli</a>
         </div>
       </div>
 
-      <a href="#contatti">Contatti</a>
+      <a href="/contatti">Contatti</a>
 
     </nav>
 
@@ -51,29 +51,81 @@
   <main class="page-wrapper">
     
 
-<section class="page-about">
+<section class="metodo-page">
 
-  <div class="container">
+  <div class="metodo-container">
 
-    <h1>Metodo</h1>
-    <p class="subtitle">
-      Un percorso personale che è diventato strumento di aiuto per gli altri.
-    </p>
-
-    <div class="about-long">
-
-      <div class="about-text">
-        
-      </div>
-
-      <div class="about-side">
-        <img src="/img/maura.png" alt="Maura Balocco">
-      </div>
-        </div>
-          <a href="/contatti" class="btn">Prenota un  colloquio</a>
-        </div>
-    </div>
     
+    <header class="metodo-header reveal">
+      <h1>Come opero</h1>
+      <p class="subtitle">
+        Un approccio che integra emozioni, mente e corpo.
+      </p>
+    </header>
+
+    
+    <div class="metodo-intro reveal">
+      <p>
+        Quello che mi muove verso l’aiuto del prossimo è la
+        <strong>passione</strong> e la grandissima curiosità verso ogni aspetto riguardante la
+        natura umana. In primis mi reputo una ricercatrice e vorrei donare al
+        mondo, in tempi non ancora sospetti, un nuovo approccio legato alla cura,
+        ovvero l’integrazione fra le emozioni, la mente e il corpo”.
+      </p>
+    </div>
+
+    
+    <div class="metodo-tools reveal">
+
+      <div class="tool">
+        <img src="/img/albero.png" alt="">
+        <h3>Albero genealogico</h3>
+        <p>Analisi delle dinamiche familiari e delle influenze che attraversano le generazioni. </p>
+        <a href="https://youtube.com/IL-TUO-CANALE" target="_blank" class="btn-youtube">
+            Guarda su YouTube ->
+        </a>
+      </div>
+
+
+      <div class="tool">
+        <img src="/img/psicosomatica.png" alt="">
+        <h3>Psicosomatica</h3>
+        <p>Connessione tra sintomi fisici, emozioni e vissuto interiore.</p>
+        <a href="https://youtube.com/IL-TUO-CANALE" target="_blank" class="btn-youtube">
+            Guarda su YouTube ->
+        </a>
+      </div>
+
+      <div class="tool">
+        <img src="/img/nomi.png" alt="">
+        <h3>Interpretazione della parola</h3>
+        <p>Lettura profonda del linguaggio e del suo significato inconscio. </p>
+        <a href="https://youtube.com/IL-TUO-CANALE" target="_blank" class="btn-youtube">
+            Guarda su YouTube ->
+        </a>
+      </div>
+
+    </div>
+
+    
+    <div class="metodo-manifesto reveal">
+      <p>
+        Il mio campo operativo riguarda la lettura dell’”ALBERO GENEALOGICO” e la
+        “PSICOSOMATICA”, a cui ho aggiunto “L’INTERPRETAZIONE DELLA PAROLA”. <br>
+        
+        Utilizzo un metodo terapeutico personale e unico, sviluppato da anni di
+        ricerca e studio, e affinato da corroborata esperienza clinica. Tale metodo si
+        avvale della conoscenza dell’ <strong>assonanza inconscia</strong>  termine da me
+        coniato per evidenziare un connubio fra la parola e il suo significato a
+        livello inconsapevole, con il supporto dell’etimologia e di una buona dose di
+        intuizione.
+      </p>
+    </div>
+      <div class="metodo-cta reveal">
+        <p>Se senti che questo approccio risuona con te, possiamo iniziare insieme.</p>
+        <a href="/contatti" class="btn">Prenota un colloquio</a>
+      </div>
+    </div>
   </div>
 
 </section>
@@ -121,6 +173,18 @@
 </footer>
   
 <button id="backToTop">↑</button>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('show');
+  });
+}, { threshold: 0.15 });
+
+reveals.forEach(el => obs.observe(el));
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {

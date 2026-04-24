@@ -27,20 +27,20 @@
 
     <nav class="main-nav">
       <a href="/chi-sono">Chi sono</a>
-      <a href="#metodo">Metodo</a>
+      <a href="/metodo">Metodo</a>
 
       <div class="dropdown">
         <a href="/libri/" class="dropdown-trigger">Libri</a>
 
         <div class="dropdown-menu">
-          <a href="#">Quando il sangue si esprime atraverso il Segreto</a>
-          <a href="#">Oltre Sangue e Segreto</a>
-          <a href="#">Sangue e Segreto</a>
-          <a href="#">Il linguaggio degli uccelli</a>
+          <a href="/libri/sangue-segreto/">Quando il sangue si esprime attraverso il Segreto</a>
+          <a href="/libri/oltre-sangue/">Oltre Sangue e Segreto</a>
+          <a href="/libri/sangue-e-segreto/">Sangue e Segreto</a>
+          <a href="/libri/il-linguaggio-degli-uccelli/">Il linguaggio degli uccelli</a>
         </div>
       </div>
 
-      <a href="#contatti">Contatti</a>
+      <a href="/contatti">Contatti</a>
 
     </nav>
 
@@ -81,11 +81,13 @@ paura in uno strumento di aiuto potente.</p>
       <div class="about-side">
         <img src="/img/maura.png" alt="Maura Balocco">
       </div>
-      
+        </div>
+          <a href="/contatti" class="btn">Prenota un  colloquio</a>
+        </div>
     </div>
-    <a href="#" class="btn">Prenota un  colloquio</a>
+    
   </div>
-  
+
 </section>
 
 
@@ -131,6 +133,18 @@ paura in uno strumento di aiuto potente.</p>
 </footer>
   
 <button id="backToTop">↑</button>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('show');
+  });
+}, { threshold: 0.15 });
+
+reveals.forEach(el => obs.observe(el));
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {

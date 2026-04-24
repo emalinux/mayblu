@@ -26,6 +26,18 @@
 <button id="backToTop">↑</button>
 
 <script>
+const reveals = document.querySelectorAll('.reveal');
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('show');
+  });
+}, { threshold: 0.15 });
+
+reveals.forEach(el => obs.observe(el));
+</script>
+
+<script>
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("backToTop");
 

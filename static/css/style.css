@@ -1234,17 +1234,21 @@ body.section-libri {
     METODO REFINED PAGE
 ============================================================ */
 
-body.page-metodo {
-  background:
-    linear-gradient(
-      rgba(244,241,234,0.88),
-      rgba(244,241,234,0.88)
-    ),
-    url('/img/metodo.webp') center/cover fixed no-repeat;
-}
-
 .metodo-page {
   padding: 140px 20px 100px;
+}
+
+body.section-metodo {
+  background:
+    linear-gradient(
+      to right,
+      rgba(244,241,234,1) 0%,
+      rgba(244,241,234,0.95) 10%,
+      rgba(244,241,234,0.88) 50%,
+      rgba(244,241,234,0.95) 90%,
+      rgba(244,241,234,1) 100%
+    ),
+    url('/img/metodo.webp') center/cover fixed no-repeat;
 }
 
 .metodo-container {
@@ -1258,36 +1262,203 @@ body.page-metodo {
   margin-bottom: 60px;
 }
 
+.metodo-header h1 {
+  font-size: 2.6rem;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.metodo-header p {
+  font-size: 1.05rem;
+  color: #666;
+}
+
 /* INTRO */
 .metodo-intro {
   text-align: center;
-  max-width: 700px;
-  margin: 0 auto 80px;
-  line-height: 1.9;
+  max-width: 720px;
+  margin: 0 auto 100px;
+
+  line-height: 2.1;
+  font-size: 1.05rem;
+
+  color: #333;
 }
 
 /* TOOLS */
 .metodo-tools {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin-bottom: 80px;
+  gap: 50px;
+  margin-bottom: 100px;
 }
 
 .tool {
   text-align: center;
+  padding: 30px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(6px);
+
+  transition: all .35s ease;
+  position: relative;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.05);
+}
+
+.tool:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.12);
 }
 
 .tool img {
+  transition: transform .4s ease;
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  max-width: 260px;   /* 🔥 LIMITE */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;  /* 🔥 CENTRA */
+  border-radius: 12px;
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.12);
+}
+
+.tool:hover img {
+  transform: scale(1.05);
+}
+
+/* micro highlight elegante */
+.tool::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  box-shadow: 0 0 0 1px rgba(201,163,91,0.15) inset;
+  pointer-events: none;
+}
+
+.tool h3 {
+  letter-spacing: 2px;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.tool a {
+  display: inline-block;
+  margin-top: 10px;
+
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #c62f21;
+
+  transition: all 0.3s ease;
+}
+
+.tool a:hover {
+  transform: translateY(-2px);
 }
 
 /* MANIFESTO */
 .metodo-manifesto {
   text-align: center;
-  max-width: 750px;
+  max-width: 760px;
   margin: auto;
-  line-height: 1.9;
+
+  line-height: 2.1;
+  font-size: 1.05rem;
+}
+
+.metodo-intro,
+.metodo-manifesto {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.metodo-manifesto::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #c9a35b;
+  margin: 0 auto 30px;
+  opacity: 0.5;
+}
+
+.metodo-intro strong{
+ color: #c62f21;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.metodo-cta {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.metodo-cta p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.metodo-manifesto strong {
+  color: #c62f21;
+  font-weight: 600;
+}
+
+.btn-youtube {
+  display: inline-block;
+  margin-top: 12px;
+
+  padding: 10px 20px;
+  border-radius: 30px;
+
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  background: linear-gradient(
+    135deg,
+    #c62f21,
+    #e04b3f
+  );
+
+  color: #ffffff; /* 🔥 TESTO VISIBILE */
+  text-decoration: none !important;
+
+  box-shadow: 0 8px 20px rgba(198,47,33,0.25);
+
+  transition: all 0.25s ease;
+}
+
+.btn-youtube:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 30px rgba(198,47,33,0.35);
+
+  filter: brightness(1.05); /* 🔥 micro effetto, non invasivo */
+}
+
+.btn-youtube,
+.btn-youtube:visited,
+.btn-youtube:hover {
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .metodo-intro,
+  .metodo-manifesto {
+    text-align: left;
+  }
 }
