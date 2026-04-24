@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400&family=La+Belle+Aurore&display=swap">
 </head>
 
-<body class="kind-section page-_index">
+<body class="kind-section page-_index section-libri">
 
   <header class="site-header">
 
@@ -30,13 +30,13 @@
       <a href="#metodo">Metodo</a>
 
       <div class="dropdown">
-        <span class="dropdown-trigger">Libri</span>
+        <a href="/libri/" class="dropdown-trigger">Libri</a>
 
         <div class="dropdown-menu">
-          <a href="#">Libro 1</a>
-          <a href="#">Libro 2</a>
-          <a href="#">Libro 3</a>
-          <a href="#">Libro 4</a>
+          <a href="#">Quando il sangue si esprime atraverso il Segreto</a>
+          <a href="#">Oltre Sangue e Segreto</a>
+          <a href="#">Sangue e Segreto</a>
+          <a href="#">Il linguaggio degli uccelli</a>
         </div>
       </div>
 
@@ -53,23 +53,113 @@
 
 <section class="books-page">
 
-  <div class="books-page-inner">
+  <div class="books-page-container">
 
-    <h1>I miei libri</h1>
+    <header class="books-page-header">
+      <h1>I miei libri</h1>
+      <p>
+        Ogni libro nasce da un percorso di ricerca personale e professionale:
+        uno spazio in cui parola, sintomo, memoria e trasformazione si incontrano.
+      </p>
+    </header>
 
-    <div class="books-grid">
+    <div class="books-page-grid">
 
       
 
-      <a href="/libri/sangue-segreto/" class="book-card">
+      <article class="book-item reverse">
 
-        <img src="/img/libro1.jpg" alt="Quando il sangue si esprime attraverso il segreto">
+        <a href="/libri/sangue-segreto/" class="book-cover-link">
+          <img src="/img/libro1.png" alt="Quando il sangue si esprime attraverso il segreto">
+        </a>
 
-        <h3>Quando il sangue si esprime attraverso il segreto</h3>
+        <div class="book-item-content">
+           <h2>Quando il sangue si esprime attraverso il segreto</h2>
 
-        <p>Un viaggio tra inconscio e trasformazione</p>
+           
+           <p class="book-subtitle">Le Leggi Genealogiche che improntano la nostra vita</p>
+           
 
-      </a>
+           
+           <p>La legge delle &amp; lune: Trovate al link il contenuto del paragrafo dedicato a questa importantissima legge che potrà aiutarvi in modo pratico a collegare il sintomo al trauma. (Pp. 52-cartaceo - Pp. 87 - ebook)</p>
+           
+
+           <a href="/libri/sangue-segreto/" class="btn">Scopri il libro</a>
+         </div>
+
+      </article>
+
+      
+
+      <article class="book-item ">
+
+        <a href="/libri/oltre-sangue/" class="book-cover-link">
+          <img src="/img/libro2.png" alt="Oltre sangue e segreto">
+        </a>
+
+        <div class="book-item-content">
+           <h2>Oltre sangue e segreto</h2>
+
+           
+           <p class="book-subtitle">Quando spirito e materia si toccano</p>
+           
+
+           
+           <p>La gravidanza: Trovate al link il contenuto del paragrafo dedicato alla gravidanza, per conoscere risvolti legati al concepimento e alla formazione del feto nel ventre materno. Nel libro si tratta la vita e la morte. (Pp. 35)</p>
+           
+
+           <a href="/libri/oltre-sangue/" class="btn">Scopri il libro</a>
+         </div>
+
+      </article>
+
+      
+
+      <article class="book-item reverse">
+
+        <a href="/libri/sangue-e-segreto/" class="book-cover-link">
+          <img src="/img/libro3.png" alt="sangue e segreto">
+        </a>
+
+        <div class="book-item-content">
+           <h2>sangue e segreto</h2>
+
+           
+           <p class="book-subtitle">Mistero uomo</p>
+           
+
+           
+           <p>I denti in cattedra: Trovate al link il contenuto del paragrafo dedicato alla rappresentazione dell’albero genealogico e dei suoi componenti nella bocca, compresa la simbologia dell’ultima cena, famoso dipinto di L. Da Vinci. (Pp. 186)</p>
+           
+
+           <a href="/libri/sangue-e-segreto/" class="btn">Scopri il libro</a>
+         </div>
+
+      </article>
+
+      
+
+      <article class="book-item ">
+
+        <a href="/libri/il-linguaggio-degli-uccelli/" class="book-cover-link">
+          <img src="/img/libro4.png" alt="Il linguaggio degli uccelli">
+        </a>
+
+        <div class="book-item-content">
+           <h2>Il linguaggio degli uccelli</h2>
+
+           
+           <p class="book-subtitle">Guida Intuitiva all&#39;interpretazione del nome</p>
+           
+
+           
+           <p>Potenza dei numeri in parole: Trovate al link il contenuto del paragrafo dedicato al mio modo di interpretare i suoni delle parole (Pp. 72)</p>
+           
+
+           <a href="/libri/il-linguaggio-degli-uccelli/" class="btn">Scopri il libro</a>
+         </div>
+
+      </article>
 
       
 
@@ -120,8 +210,14 @@
   </div>
 
 </footer>
-  <script>
+  
+<button id="backToTop">↑</button>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("backToTop");
+
+  if (!btn) return; 
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
@@ -137,7 +233,7 @@
       behavior: "smooth"
     });
   });
+});
 </script>
- <button id="backToTop">↑</button>
 </body>
 </html>

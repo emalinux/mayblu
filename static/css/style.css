@@ -235,7 +235,7 @@ a:hover {
 }
 
 .logo img {
-  height: 150px;   /* un filo più grande → ora si vede */
+  height: 130px;   /* un filo più grande → ora si vede */
   opacity: 0.9;
 }
 
@@ -986,13 +986,13 @@ nav {
 
 body.page-chi-sono {
   background-color: #f4f1ea;
-  background-image: url('/img/texture_pois.webp');
+  background-image: url('/img/chipois.webp');
   background-size: 220px;
   background-repeat: repeat;
 }
 
 .page-about {
-  padding: 100px 20px;
+  padding: 180px 20px;
   padding-bottom: 120px;
   position: relative;
   z-index: 1;
@@ -1059,58 +1059,235 @@ body.page-chi-sono {
 }
 
 /* ============================================================
-    BOOKS REFINED PAGE
+   BOOKS PAGE
 ============================================================ */
 
+body.section-libri {
+  background:
+    linear-gradient(
+      rgba(244,241,234,0.65),
+      rgba(244,241,234,0.65)
+    ),
+    url('/img/pallros.webp') center/cover fixed no-repeat;
+}
+
 .books-page {
-  margin-top: 120px;
+  padding: 130px 20px 100px;
+  background: transparent;
 }
 
-.books-page-inner {
+.books-page-container {
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.books-page-header {
   text-align: center;
+  max-width: 760px;
+  margin: 0 auto 70px;
 }
 
-.books-grid {
+.books-page-header h1 {
+  margin-bottom: 20px;
+}
+
+.books-page-header p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.books-page-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.book-item {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  margin-top: 40px;
-}
+  grid-template-columns: 300px 1fr;
+  gap: 50px;
+  align-items: center;
 
-.book-card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 14px;
+  background: rgba(255,255,255,0.85);
+  padding: 40px;
+  border-radius: 20px;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.06);
 
   transition: all 0.4s ease;
 }
 
-.book-card img {
+.book-item:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 28px 80px rgba(0,0,0,0.10);
+}
+
+.book-cover-link img {
   width: 100%;
+  border-radius: 8px;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.15);
+}
+
+.book-item h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.book-item-content .book-subtitle {
+  color: #c62f21;
+  font-style: italic;
   margin-bottom: 15px;
 }
 
-.book-card:hover {
-  transform: translateY(-6px);
+.book-item-content p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.book-item .btn {
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.book-item.reverse {
+  grid-template-columns: 1fr 300px;
+}
+
+.book-item.reverse .book-cover-link {
+  order: 2;
+}
+
+.book-item.reverse .book-item-content {
+  order: 1;
 }
 
 /* single book */
 
+.book-single {
+  padding: 160px 20px 100px;
+}
+
 .book-single-inner {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 40px;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: center;
 }
 
 .book-cover img {
   width: 100%;
+  border-radius: 10px;
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.2);
+
+  transition: transform 0.4s ease;
 }
 
-.book-content {
-  text-align: left;
+.book-cover img:hover {
+  transform: scale(1.03);
+}
+
+.book-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.book-content .book-subtitle {
+  color: #c62f21;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.book-text {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #444;
+
+  margin-bottom: 30px;
+}
+
+.book-content .btn {
+  margin-top: 20px;
+}
+
+.book-single-inner {
+  background: rgba(255,255,255,0.85);
+  padding: 60px;
+  border-radius: 20px;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.08);
+}
+
+/* ============================================================
+    METODO REFINED PAGE
+============================================================ */
+
+body.page-metodo {
+  background:
+    linear-gradient(
+      rgba(244,241,234,0.88),
+      rgba(244,241,234,0.88)
+    ),
+    url('/img/metodo.webp') center/cover fixed no-repeat;
+}
+
+.metodo-page {
+  padding: 140px 20px 100px;
+}
+
+.metodo-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* HEADER */
+.metodo-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* INTRO */
+.metodo-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 80px;
+  line-height: 1.9;
+}
+
+/* TOOLS */
+.metodo-tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.tool {
+  text-align: center;
+}
+
+.tool img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* MANIFESTO */
+.metodo-manifesto {
+  text-align: center;
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.9;
 }

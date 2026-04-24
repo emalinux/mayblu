@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400&family=La+Belle+Aurore&display=swap">
 </head>
 
-<body class="kind-page page-sangue-segreto">
+<body class="kind-page page-sangue-segreto section-libri">
 
   <header class="site-header">
 
@@ -30,13 +30,13 @@
       <a href="#metodo">Metodo</a>
 
       <div class="dropdown">
-        <span class="dropdown-trigger">Libri</span>
+        <a href="/libri/" class="dropdown-trigger">Libri</a>
 
         <div class="dropdown-menu">
-          <a href="#">Libro 1</a>
-          <a href="#">Libro 2</a>
-          <a href="#">Libro 3</a>
-          <a href="#">Libro 4</a>
+          <a href="#">Quando il sangue si esprime atraverso il Segreto</a>
+          <a href="#">Oltre Sangue e Segreto</a>
+          <a href="#">Sangue e Segreto</a>
+          <a href="#">Il linguaggio degli uccelli</a>
         </div>
       </div>
 
@@ -55,17 +55,27 @@
 
   <div class="book-single-inner">
 
+    
     <div class="book-cover">
-      <img src="/img/libro1.jpg" alt="Quando il sangue si esprime attraverso il segreto">
+      <img src="/img/libro1.png" alt="Quando il sangue si esprime attraverso il segreto">
     </div>
 
+    
     <div class="book-content">
+
       <h1>Quando il sangue si esprime attraverso il segreto</h1>
 
-      <p><p>Testo completo del libro, descrizione lunga, ecc.</p>
-</p>
+      
+      <p class="book-subtitle">Le Leggi Genealogiche che improntano la nostra vita</p>
+      
 
-      <a href="#" class="btn">Acquista</a>
+      <div class="book-text">
+        <p>Testo esteso del libro.</p>
+
+      </div>
+
+      <a href="#" class="btn">Acquista il libro</a>
+
     </div>
 
   </div>
@@ -113,8 +123,14 @@
   </div>
 
 </footer>
-  <script>
+  
+<button id="backToTop">↑</button>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("backToTop");
+
+  if (!btn) return; 
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
@@ -130,7 +146,7 @@
       behavior: "smooth"
     });
   });
+});
 </script>
- <button id="backToTop">↑</button>
 </body>
 </html>

@@ -2,23 +2,41 @@
 
 <section class="books-page">
 
-  <div class="books-page-inner">
+  <div class="books-page-container">
 
-    <h1>I miei libri</h1>
+    <header class="books-page-header">
+      <h1>I miei libri</h1>
+      <p>
+        Ogni libro nasce da un percorso di ricerca personale e professionale:
+        uno spazio in cui parola, sintomo, memoria e trasformazione si incontrano.
+      </p>
+    </header>
 
-    <div class="books-grid">
+    <div class="books-page-grid">
 
-      {{ range .Pages }}
+      {{ range $i, $page := .Pages.ByWeight }}
 
-      <a href="{{ .RelPermalink }}" class="book-card">
+      <article class="book-item {{ if modBool $i 2 }}reverse{{ end }}">
 
-        <img src="{{ .Params.cover }}" alt="{{ .Title }}">
+        <a href="{{ $page.RelPermalink }}" class="book-cover-link">
+          <img src="{{ $page.Params.cover }}" alt="{{ $page.Title }}">
+        </a>
 
-        <h3>{{ .Title }}</h3>
+        <div class="book-item-content">
+           <h2>{{ $page.Title }}</h2>
 
-        <p>{{ .Params.short }}</p>
+           {{ with $page.Params.subtitle }}
+           <p class="book-subtitle">{{ . }}</p>
+           {{ end }}
 
-      </a>
+           {{ with $page.Params.excerpt }}
+           <p>{{ . }}</p>
+           {{ end }}
+
+           <a href="{{ $page.RelPermalink }}" class="btn">Scopri il libro</a>
+         </div>
+
+      </article>
 
       {{ end }}
 

@@ -4,16 +4,26 @@
 
   <div class="book-single-inner">
 
+    <!-- COPERTINA -->
     <div class="book-cover">
       <img src="{{ .Params.cover }}" alt="{{ .Title }}">
     </div>
 
+    <!-- CONTENUTO -->
     <div class="book-content">
+
       <h1>{{ .Title }}</h1>
 
-      <p>{{ .Content }}</p>
+      {{ with .Params.subtitle }}
+      <p class="book-subtitle">{{ . }}</p>
+      {{ end }}
 
-      <a href="#" class="btn">Acquista</a>
+      <div class="book-text">
+        {{ .Content }}
+      </div>
+
+      <a href="#" class="btn">Acquista il libro</a>
+
     </div>
 
   </div>
