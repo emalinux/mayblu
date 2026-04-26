@@ -1462,3 +1462,195 @@ body.section-metodo {
     text-align: left;
   }
 }
+
+/* ============================================================
+    CONTATTI REFINED PAGE
+============================================================ */
+
+.contatti-page {
+  padding: 140px 20px 100px;
+}
+
+body.section-contatti {
+  background:
+    linear-gradient(
+      to right,
+      rgba(244,241,234,1) 0%,
+      rgba(244,241,234,0.95) 10%,
+      rgba(244,241,234,0.88) 50%,
+      rgba(244,241,234,0.95) 90%,
+      rgba(244,241,234,1) 100%
+    ),
+    url('/img/contact.webp') center/cover no-repeat;
+
+  background-attachment: fixed;
+}
+
+
+
+/* HEADER */
+.contatti-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.contatti-header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+}
+
+.contatti-intro {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.contatti-soft {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* LAYOUT */
+.contatti-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+  align-items: center;
+}
+
+/* COLONNA SINISTRA */
+.contatti-left {
+  background:
+    linear-gradient(
+      rgba(244,241,234,0.85),
+      rgba(244,241,234,0.85)
+    ),
+    url('/img/dente.webp') center/70% no-repeat;
+
+  opacity: 0.9;
+}
+
+/* COLONNA DESTRA */
+.contatti-right {
+  padding: 60px 40px;
+  max-width: 480px;
+  margin-left: 40px;
+}
+
+/* INFO */
+.contatti-info {
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+/* FORM */
+.contatti-form {
+  margin-bottom: 40px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form-title {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.form-grid input,
+.form-grid textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 12px;
+
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 6px;
+
+  font-family: inherit;
+  font-size: 0.9rem;
+
+  background: rgba(255,255,255,0.8);
+}
+
+.form-grid textarea {
+  grid-column: 1 / -1;
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* BOTTONE FORM */
+.contatti-form .btn {
+  width: 100%;
+  margin-top: 15px;
+  display: block;
+
+  margin: 20px auto 0;
+
+  padding: 12px 28px;
+}
+
+/* SOCIAL */
+.social-block {
+  margin-top: 40px;
+}
+
+.social-title {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: #333;
+
+  font-size: 0.95rem;
+
+  padding: 6px 10px;
+  border-radius: 8px;
+
+  transition: all 0.25s ease;
+}
+
+.social-item img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-item:hover {
+  background: rgba(198,47,33,0.06);
+  transform: translateX(4px);
+  color: #c62f21;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contatti-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contatti-left {
+    display: none;
+  }
+
+  .contatti-right {
+    max-width: 100%;
+    padding: 40px 20px;
+  }
+}
