@@ -1170,64 +1170,227 @@ body.section-libri {
 
 /* single book */
 
-.book-single {
-  padding: 160px 20px 100px;
+/* =========================================
+   RESET BASE
+========================================= */
+
+* {
+  box-sizing: border-box;
 }
 
-.book-single-inner {
-  max-width: 1000px;
-  margin: auto;
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f7f8fa;
+  color: #1a1a1a;
+  margin: 0;
+}
 
+/* =========================================
+   LAYOUT
+========================================= */
+
+.page-wrapper {
+  padding-top: 120px;
+}
+
+.book-page {
+  margin-top: 40px;
+}
+
+/* =========================================
+   CARD CONTAINER
+========================================= */
+
+.book-card {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.book-hero {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 60px;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
   align-items: center;
 }
 
+/* =========================================
+   COVER
+========================================= */
+
 .book-cover img {
   width: 100%;
-  border-radius: 10px;
-
-  box-shadow:
-    0 30px 80px rgba(0,0,0,0.2);
-
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
 .book-cover img:hover {
   transform: scale(1.03);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* =========================================
+   CONTENUTO TESTO
+========================================= */
+
+.book-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .book-content h1 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin: 0;
 }
 
-.book-content .book-subtitle {
+.book-subtitle {
   color: #c62f21;
   font-style: italic;
-  margin-bottom: 25px;
-}
-
-.book-text {
   font-size: 1rem;
-  line-height: 1.9;
+}
+
+.book-description {
   color: #444;
-
-  margin-bottom: 30px;
+  line-height: 1.6;
 }
 
-.book-content .btn {
-  margin-top: 20px;
+/* =========================================
+   CTA + LINK
+========================================= */
+
+.book-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.book-single-inner {
-  background: rgba(255,255,255,0.85);
-  padding: 60px;
-  border-radius: 20px;
+.book-links {
+  display: flex;
+  gap: 20px;
+}
 
-  box-shadow:
-    0 20px 60px rgba(0,0,0,0.08);
+.link-ghost {
+  font-size: 0.9rem;
+  color: #8a8178;
+  text-decoration: none;
+  position: relative;
+}
+
+.link-ghost::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 1px;
+  background: #b89565;
+  transition: 0.3s;
+}
+
+.link-ghost:hover::after {
+  width: 100%;
+}
+
+/* =========================================
+   BOTTONI
+========================================= */
+
+.btn-primary {
+  background: #b89565;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: #a07f52;
+}
+
+/* =========================================
+   ESTRATTO
+========================================= */
+
+.book-preview-card {
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 4px solid #c8a97e;
+  background: linear-gradient(to bottom, #ffffff, #faf8f5);
+}
+
+.cta-note {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.book-form {
+  margin-top: 40px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.book-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.book-form button {
+  align-self: flex-start;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .book-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .book-cover {
+    max-width: 250px;
+    margin: 0 auto;
+    order: -1;
+  }
+
+  .book-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* ============================================================
@@ -1415,6 +1578,39 @@ body.section-metodo {
 .metodo-manifesto strong {
   color: #c62f21;
   font-weight: 600;
+}
+
+.metodo-extra {
+  max-width: 720px;
+  margin: 80px auto;
+  text-align: center;
+  line-height: 2;
+}
+
+.metodo-quote {
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.metodo-subtitle {
+  color: #c62f21;
+  margin-bottom: 20px;
+}
+
+.metodo-list {
+  text-align: left;
+  margin: 0 auto 40px;
+  max-width: 600px;
+}
+
+.metodo-list li {
+  margin-bottom: 10px;
+}
+
+.metodo-highlight {
+  margin-top: 30px;
+  font-weight: 500;
 }
 
 .btn-youtube {

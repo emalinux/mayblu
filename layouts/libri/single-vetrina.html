@@ -1,0 +1,54 @@
+<section class="book-page vetrina">
+  <div class="book-card book-single-card">
+    <!-- HERO -->
+    <div class="book-hero">
+      <div class="book-cover">
+        <img src="{{ .Params.cover }}" alt="{{ .Title }}" />
+      </div>
+
+      <div class="book-content">
+        <h1>{{ .Title }}</h1>
+
+        {{ with .Params.subtitle }}
+        <p class="book-subtitle">{{ . }}</p>
+        {{ end }}
+
+        <p class="book-description">{{ .Content }}</p>
+
+        <div class="book-links">
+          <a href="{{ .Params.pdf }}" target="_blank" class="link-ghost">
+            📖 Leggi estratto
+          </a>
+          <a href="{{ .Params.pdf }}" download class="link-ghost">
+            ⬇️ Scarica PDF
+          </a>
+        </div>
+
+        <a href="/contatti" class="btn-primary"> Richiedi informazioni </a>
+      </div>
+    </div>
+
+    <!-- ESTRATTO -->
+    {{ with .Params.estratto }}
+    <div class="book-preview-card">
+      <p class="cta-note">Accesso immediato • Lettura digitale</p>
+      <h3>Un estratto dal libro</h3>
+      <p>{{ . }}</p>
+    </div>
+    {{ end }}
+
+    <!-- FORM -->
+    <div class="book-form">
+      <p>Vuoi maggiori informazioni su questo libro?</p>
+
+      <form name="libro-contatto" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="libro-contatto" />
+
+        <input type="text" name="nome" placeholder="Il tuo nome" required />
+        <input type="email" name="email" placeholder="Email" required />
+
+        <button type="submit" class="btn-primary">Invia richiesta</button>
+      </form>
+    </div>
+  </div>
+</section>

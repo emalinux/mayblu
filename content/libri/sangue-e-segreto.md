@@ -3,6 +3,10 @@ title: "sangue e segreto"
 subtitle: "Mistero uomo"
 cover: "/img/libro3.png"
 excerpt: "I denti in cattedra: Trovate al link il contenuto del paragrafo dedicato alla rappresentazione dell’albero genealogico e dei suoi componenti nella bocca, compresa la simbologia dell’ultima cena, famoso dipinto di L. Da Vinci. (Pp. 186)"
+estratto: del dio cane ciucciato
+
+layout: "single-vetrina"
+cta: "info"
 weight: 3
 ---
 
