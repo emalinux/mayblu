@@ -12,47 +12,45 @@
 
       <div class="book-content">
 
-        <!-- TITOLO -->
         <h1>{{ .Title }}</h1>
 
-        <!-- SUBTITLE -->
         {{ with .Params.subtitle }}
         <p class="book-subtitle">{{ . }}</p>
         {{ end }}
 
-        <!-- DESCRIZIONE -->
-        <p class="book-description">
-          {{ .Content }}
-        </p>
+        {{ with .Params.excerpt }}
+        <p class="book-excerpt">{{ . }}</p>
+        {{ end }}
 
-        <!-- CTA VENDITA -->
+        <!-- CTA -->
         <div class="book-actions">
-          <a href="{{ .Params.stripe_link }}" class="btn-primary">
-            Acquista – {{ .Params.prezzo }}€
-          </a>
 
           <div class="book-links">
-  <a href="{{ .Params.pdf }}" target="_blank" class="link-ghost">
-    📖 Leggi estratto
-  </a>
-  <a href="{{ .Params.pdf }}" download class="link-ghost">
-    ⬇️ Scarica PDF
-  </a>
-</div>
+            <a href="{{ .Params.pdf }}" target="_blank" class="link-main">
+              📖 Leggi estratto
+            </a>
+        
+            <a href="{{ .Params.pdf }}" download class="link-main">
+              ⬇️ Scarica PDF
+            </a>
+          </div>
+        
+          <a href="{{ .Params.stripe_link }}" class="btn-soft">
+            Acquista – {{ .Params.prezzo }}€
+          </a>
+        
         </div>
 
       </div>
-
     </div>
 
-    <!-- ESTRATTO -->
-    {{ with .Params.estratto }}
+    <!-- ESTRATTO (VERO) -->
     <div class="book-preview-card">
       <p class="cta-note">Accesso immediato • Lettura digitale</p>
       <h3>Un estratto dal libro</h3>
-      <p>{{ . }}</p>
+
+      {{ .Content }}
     </div>
-    {{ end }}
 
     <!-- FORM -->
     <div class="book-form">
