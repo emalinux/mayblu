@@ -54,13 +54,14 @@
 
     <!-- FORM -->
     <div class="book-form">
-      <p>Vuoi maggiori informazioni su questo libro?</p>
+      <p>Vuoi maggiori informazioni su questo libro? Scrivimi senza impegno.</p>
 
       <form name="libro-contatto" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="libro-contatto">
 
         <input type="text" name="nome" placeholder="Il tuo nome" required>
         <input type="email" name="email" placeholder="Email" required>
+        <textarea name="messaggio" placeholder="Scrivi qui la tua richiesta..." rows="4" required></textarea>
 
         <button type="submit" class="btn-primary">
           Invia richiesta

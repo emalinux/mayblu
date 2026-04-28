@@ -1359,10 +1359,11 @@ body {
 ========================================= */
 
 .book-preview-card {
-  margin-top: 50px;
+  margin-top: 70px;
+  padding-top: 50px;
   max-width: 720px;
 
-  margin: 0 auto;
+  margin: 70px auto 0;
   text-align: center;
   padding: 40px;
   border-radius: 12px;
@@ -1422,6 +1423,9 @@ body {
   color: #666;
   line-height: 1.6;
   margin-bottom: 15px;
+  text-align: justify;
+  line-height: 1.75;
+  hyphens: auto;
 }
 
 .book-preview-card blockquote {
@@ -1432,11 +1436,74 @@ body {
   color: #555;
 }
 
+.book-preview-card p:not(.cta-note),
+.book-preview-card blockquote {
+  text-align: left;
+}
+
 .book-preview-card hr {
   margin: 40px 0;
   border: none;
   height: 1px;
   background: #eee;
+}
+
+.editorial-block {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 30px;
+  align-items: start;
+  margin: 30px 0;
+  margin-top: 10px;
+}
+
+.editorial-block p {
+  text-align: justify;
+  line-height: 1.75;
+  hyphens: auto;
+}
+
+.editorial-block > * {
+  margin-top: 0 !important;
+}
+
+.editorial-block > :first-child {
+  margin-top: 0;
+}
+
+.editorial-block img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 0;
+   display: block;
+}
+
+.editorial-block div {
+  text-align: left;
+  line-height: 1.7;
+  margin-top: 0;
+}
+
+.book-preview-card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  .editorial-block {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .editorial-block div {
+    text-align: left;
+  }
+
+  .editorial-block img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
 }
 
 /* =========================================
@@ -1455,6 +1522,27 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.book-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.1);
+
+  font-family: inherit;
+  font-size: 0.9rem;
+
+  background: rgba(255,255,255,0.8);
+}
+
+.book-form input:focus,
+.book-form textarea:focus {
+  outline: none;
+  border-color: #c9a35b;
+  box-shadow: 0 0 0 2px rgba(201,163,91,0.15);
 }
 
 .book-form input {
