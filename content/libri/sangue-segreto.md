@@ -17,7 +17,7 @@ weight: 1
 
 <div class="editorial-block">
 
-  <img src="/img/libro1.png" alt="Libro">
+  <img src="/img/quando.webp" alt="Libro">
 
 
 Questo scritto è stato estrapolato in alcune parti da un paragrafo dedicato che si trova nel mio primo libro **Quando il sangue si esprime attraverso il segreto** (pp. 26 cartaceo – pp. 44 ebook). <br> L’obiettivo è riportare alcuni passaggi importanti legati all’Albero Genealogico come sistema, al fine di far comprendere un approccio più intuitivo alla lettura delle radici familiari.<br>

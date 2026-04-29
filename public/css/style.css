@@ -1556,6 +1556,57 @@ body {
 }
 
 /* =========================================
+   PAGINA VETRINA BOOKS
+========================================= */
+
+.book-page.vetrina .book-card {
+  background: #fff;
+}
+
+.book-page.vetrina .book-form p {
+  text-align: center;
+}
+
+.book-preview-light {
+  max-width: 680px;
+  margin: 70px auto 0;
+
+  padding: 35px;
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(184,149,101,0.25);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.book-form.light {
+  max-width: 600px;
+  margin: 50px auto;
+
+  padding: 30px;
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(0,0,0,0.05);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.book-form input,
+.book-form textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+
+  background: #fff;
+}
+
+/* =========================================
    MOBILE
 ========================================= */
 
