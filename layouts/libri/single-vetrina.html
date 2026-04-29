@@ -3,6 +3,7 @@
 <section class="book-page vetrina">
   <div class="book-card book-single-card">
 
+    <!-- HERO -->
     <div class="book-hero">
 
       <div class="book-cover">
@@ -22,11 +23,11 @@
         {{ end }}
 
         <div class="book-links">
-          <a href="{{ .Params.pdf }}" target="_blank" class="link-ghost">
+          <a href="{{ .Params.pdf }}" target="_blank" class="link-main">
             📖 Leggi estratto
           </a>
 
-          <a href="{{ .Params.pdf }}" download class="link-ghost">
+          <a href="{{ .Params.pdf }}" download class="link-main">
             ⬇️ Scarica PDF
           </a>
         </div>
@@ -38,10 +39,7 @@
       </div>
     </div>
 
-  </div>
-
- 
-    <!-- ESTRATTO (VERO) -->
+    <!-- ESTRATTO -->
     <div class="book-preview-card">
       <p class="cta-note">Accesso immediato • Lettura digitale</p>
       <h3>Un estratto dal libro</h3>

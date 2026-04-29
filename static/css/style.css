@@ -660,6 +660,7 @@ nav {
 
 .about-text p {
   margin-bottom: 15px;
+  max-width: 450px;
   line-height: 1.7;
   color: #333;
   text-align: justify;
@@ -743,6 +744,7 @@ nav {
   display: flex;
   flex-direction: column;
   min-height: 440px;
+  height: 100%;
 
   transition:
     transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
@@ -775,6 +777,36 @@ nav {
 
 .method-content {
   padding: 26px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.btn-youtube {
+  display: inline-block;
+  margin-top: auto;
+
+  padding: 10px 18px;
+  border-radius: 30px;
+
+  background: linear-gradient(135deg, #c62f21, #e04b3f);
+  color: #fff;
+
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-youtube:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(198,47,33,0.3);
+}
+
+.method-content .btn-youtube {
+  margin-top: auto;        /* 🔥 lo porta in basso */
+  align-self: center;      /* 🔥 lo centra orizzontalmente */
 }
 
 .method-content h3 {
@@ -1041,10 +1073,14 @@ body.page-chi-sono {
 .about-text {
   font-size: 1rem;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .about-text p {
   margin-bottom: 20px;
+  max-width: 520px;
+
+  line-height: 1.9;
 }
 
 .about-side img {
@@ -1283,17 +1319,18 @@ body {
 }
 
 .link-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 1rem;
-  color: #444;
+  color: #8a8178;
   text-decoration: none;
-  font-weight: 500;
-  border-bottom: 1px solid transparent;
   transition: 0.2s;
 }
 
 .link-main:hover {
-  border-bottom: 1px solid #b89565;
-  color: #000;
+  color: #b89565;
+  transform: translateY(-1px);
 }
 
 .link-ghost {
@@ -1438,7 +1475,7 @@ body {
 
 .book-preview-card p:not(.cta-note),
 .book-preview-card blockquote {
-  text-align: left;
+  text-align: justify;
 }
 
 .book-preview-card hr {
@@ -1479,7 +1516,7 @@ body {
 }
 
 .editorial-block div {
-  text-align: left;
+  text-align: justify;
   line-height: 1.7;
   margin-top: 0;
 }
@@ -1488,6 +1525,10 @@ body {
   content: "";
   display: block;
   clear: both;
+}
+
+.book-preview-card p.text-red {
+  color: #c62f21;
 }
 
 @media (max-width: 768px) {
@@ -1560,7 +1601,9 @@ body {
 ========================================= */
 
 .book-page.vetrina .book-card {
-  background: #fff;
+  background: #ffffff;
+  backdrop-filter: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .book-page.vetrina .book-form p {

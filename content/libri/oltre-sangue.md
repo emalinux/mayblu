@@ -3,34 +3,41 @@ title: "Oltre sangue e segreto"
 subtitle: "Quando spirito e materia si toccano"
 cover: "/img/libro2.png"
 excerpt: "La gravidanza: Trovate al link il contenuto del paragrafo dedicato alla gravidanza, per conoscere risvolti legati al concepimento e alla formazione del feto nel ventre materno. Nel libro si tratta la vita e la morte. (Pp. 35)"
-pdf: "/pdf/quando-sangue-estratto.pdf"
+pdf: "/pdf/oltre.pdf"
 layout: "single-vetrina"
 weight: 2
 ---
 
-## L’ALBERO: UN SISTEMA PERFETTO  
-### Come in alto così in basso, come vicino così lontano
+## MADRE TERRA E LA GRAVIDANZA
+### Inserire un testo a piacere per questa sezione 
+
+*Questo scritto appartiene ad un paragrafo dedicato che si trova nel mio secondo libro **Oltre sangue e segreto** (alla pp. 35), dove si racconta in modo esoterico e immaginativo lo spostamento energetico e del pensiero legato alla creazione di un nuovo essere vivente. Questa trattazione non ha nessuna pretesa scientifica e riguarda un punto di vista spirituale. Come tale è destinato a chi voglia imparare ad usare l’immaginazione e la fantasia.*
+
+<p class="text-red">
+Questo libro edito ad maggio 2022, il secondo di una serie, è stato scritto a seguito di un lutto molto doloroso e mi ha permesso di donare un riflesso di bellezza e conoscenza ad un’esperienza molto traumatica che mi sono trovata ad affrontare in solitudine e mi ha permesso di aprire un ponte di comunicazione con l’oltre e di ottenere informazioni importanti per sdrammatizzare e comprendere il mistero della morte e che voglio donare al mondo come risorsa di aiuto a superare la paura.
+La seconda parte contiene le mie personali visioni ed intuizioni legate al campo del sintomo fisico.
+</p>
 
 <div class="editorial-block">
 
-  <img src="/img/libro2.png" alt="Libro">
+  <img src="/img/oltre.webp" alt="Libro Oltre Sangue e Segreto">
 
 
-Questo scritto è stato estrapolato in alcune parti da un paragrafo dedicato che si trova nel mio primo libro **Quando il sangue si esprime attraverso il segreto** (pp. 26 cartaceo – pp. 44 ebook). <br> L’obiettivo è riportare alcuni passaggi importanti legati all’Albero Genealogico come sistema, al fine di far comprendere un approccio più intuitivo alla lettura delle radici familiari.<br>
-Ciò che segue non ha alcuna pretesa scientifica, ma è rivolto a chi vuole imparare a guardare le cose in modo immaginativo e intuitivo.
+
+" Quando un’anima si incarna si evidenzia nella donna in gravidanza un cambiamento sia fisico che energetico.  
+Come ho detto la nostra aura energetica ingloba ogni cosa, compresa madre terra nel suo insieme.
+In quel momento l’anima della donna fa un patto inconscio con madre terra e le chiede di cedere una parte delle sue componenti di carbonio 6 per formare il bambino, con la tacita promessa che in ognuno di noi che la cenere che lei ci presta le sarà restituita dopo l’esperienza. Terra alla terra e cenere alla cenere.
 </div>
 
-> Questo libro, edito ad aprile 2019, è il primo di una serie.  
-> È stato scritto in sei mesi di raccolta di evidenze pratiche e anni di lavoro su casi clinici reali.  
->  
-> L’obiettivo è riscoprire le “leggi” delle trasmissioni genealogiche e offrire a ogni persona uno strumento per iniziare la propria scoperta delle radici familiari.
 
----
-
-> “Ogni persona quando nasce entra a far parte di un sistema allargato che è la propria famiglia...  
->  
-> Per me il tempo è molto relativo: il nuovo essere può attingere a memorie ben più antiche.  
->  
-> L’inconscio non segue un tempo lineare, ma puntiforme.  
->  
-> Non conta solo ciò che accade nei primi mesi, ma tutto il vissuto traumatico, soprattutto quello materno, che tende a ripresentarsi durante la gravidanza.”
+>Dopo la discesa dell’anima o comunque nel mentre, il fenomeno fisico si può vedere anche sul corpo della puerpera.
+>
+>Il bambino in formazione riceve due tipi di nutrimento, il primo attraverso il cibo che la mamma introduce, unito al pensiero e all’amore che lei nutre per lui.
+>
+>Si tratta dell’energia del cielo e del padre che ha voluto questo, infatti ci deve sempre essere anche un padre.
+>
+>Il secondo arriva letteralmente da sotto i piedi, da madre terra.
+>
+>Ho intuito che i piedi siano come le radici e le caviglie devono aumentare il loro volume per permettere la risalita della cenere della terra e insieme ad essa di tutte le energie degli avi, ovvero delle loro esperienze terrene avvenute su questo piano.
+>
+>Le caviglie iniziano a gonfiare man mano che si va avanti nella gravidanza e anche le gambe e vorrei ribadire che non si tratta solo del peso della pancia.”

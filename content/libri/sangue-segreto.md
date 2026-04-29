@@ -8,7 +8,7 @@ excerpt: "La legge delle & lune: Trovate al link il contenuto del paragrafo dedi
 layout: "single-vendita"
 prezzo: 29
 stripe_link: "https://buy.stripe.com/XXXX"
-pdf: "/pdf/quando-sangue-estratto.pdf"
+pdf: "/pdf/quando-sangue-segreto.pdf"
 weight: 1
 ---
 
