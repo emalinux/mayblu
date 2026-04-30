@@ -810,10 +810,11 @@ nav {
 }
 
 .method-content h3 {
-  font-size: 0.92rem;
-  letter-spacing: 2px;
-  margin-bottom: 14px;
-  color: #1f1f1f;
+  text-align: center;
+  min-height: 48px; /* 🔥 uniforma le altezze */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .method-content h3 span {
@@ -824,6 +825,20 @@ nav {
   font-size: 1rem;
   line-height: 1.65;
   color: #3f3f3f;
+  text-align: center;
+}
+
+.method-cta {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.method-cta .btn {
+  margin-top: 10px;
+}
+
+.method-cta .btn:hover {
+  transform: translateY(-2px);
 }
 
 /* ============================================================
@@ -842,7 +857,7 @@ nav {
 }
 
 .books-intro {
-  max-width: 600px;
+  text-align: left;
   margin-bottom: 40px;
 }
 
@@ -856,6 +871,11 @@ nav {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 🔥 chiave */
+
   text-align: center;
   transition: all 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -867,17 +887,32 @@ nav {
 }
 
 .book-card img {
-  max-width: 100%;
+  width: 100%;
+  height: 520px;           /* 🔥 altezza fissa */
+  object-fit: cover;       /* 🔥 ritaglia elegante */
+  border-radius: 6px;
+
   margin-bottom: 15px;
 }
 
 .book-card h3 {
   margin-bottom: 10px;
+
+  min-height: 48px; /* 🔥 uniforma */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .book-card p {
   font-size: 0.9rem;
   margin-bottom: 15px;
+
+  flex-grow: 1; /* 🔥 riempie lo spazio */
+}
+
+.book-card .btn {
+  margin-top: auto; /* 🔥 sempre in basso */
 }
 
 /* ============================================================
@@ -1261,7 +1296,7 @@ body {
 ========================================= */
 
 .book-cover img {
-  width: 100%;
+  width: 95%;
   transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
@@ -1442,10 +1477,10 @@ body {
   color: #333;
 }
 
-.book-preview-card img {
-  display: block;
-  max-width: 260px;
-  margin: 30px auto;
+.editorial-block img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -1821,6 +1856,7 @@ body.section-metodo {
 .metodo-manifesto {
   text-align: justify;
   hyphens: auto;
+  margin-top: 50px;
 }
 
 .metodo-manifesto::before {
@@ -1884,7 +1920,8 @@ body.section-metodo {
 .metodo-list {
   text-align: left;
   margin: 0 auto 40px;
-  max-width: 600px;
+  max-width: 690px;
+  text-align: justify;
 }
 
 .metodo-list li {
@@ -1892,8 +1929,24 @@ body.section-metodo {
 }
 
 .metodo-highlight {
-  margin-top: 30px;
-  font-weight: 500;
+  margin-top: 25px;
+  padding-top: 15px;
+
+  border-top: 1px solid rgba(0,0,0,0.08);
+
+  font-style: italic;
+}
+
+.metodo-text {
+  max-width: 690px;
+  margin: 0 auto 40px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.metodo-text p {
+  margin-bottom: 16px;
+  line-height: 1.7;
 }
 
 .btn-youtube {
@@ -2197,5 +2250,97 @@ body.section-contatti {
   .contatti-right {
     max-width: 100%;
     padding: 40px 20px;
+  }
+}
+
+/* Contatti Home */
+
+.contact-subtitle.big {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 20px 0 50px;
+
+  color: #c62f21;
+  font-weight: 500;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr; /* 🔥 asimmetrico */
+  gap: 60px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contact-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.contact-gallery img {
+  width: 100%;
+  height: 320px; /* 🔥 più presenti */
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.contact-gallery img:hover {
+  transform: translateY(-6px);
+}
+
+.contact-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #888;
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(6px);
+
+  padding: 35px;
+  border-radius: 18px;
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 14px;
+
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.08);
+
+  background: rgba(255,255,255,0.8);
+}
+
+.form-intro {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .contact-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-gallery img {
+    height: 260px;
   }
 }

@@ -4,12 +4,11 @@
 
     <h2>Contatti</h2>
 
-    <p class="contact-subtitle">
+    <p class="contact-subtitle big">
       Ricevo ad Alba, Torino e online.
     </p>
 
-    <a href="#form" class="contact-cta">Scrivimi</a>
-
+    <!-- IMMAGINI -->
     <div class="contact-gallery">
       <img src="/img/studio1.png" alt="">
       <img src="/img/studio2.png" alt="">
@@ -17,8 +16,27 @@
     </div>
 
     <p class="contact-caption">
-      Gli spazi in cui ricevo
+      Gli spazi in cui ti accolgo
     </p>
+
+    <!-- FORM -->
+    <div class="book-form contact-form">
+      <p class="form-intro">
+        Se senti che è il momento giusto, puoi scrivermi senza impegno.
+      </p>
+
+      <form name="contatti-home" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contatti-home">
+
+        <input type="text" name="nome" placeholder="Il tuo nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="messaggio" placeholder="Scrivi qui la tua richiesta..." rows="4" required></textarea>
+
+        <button type="submit" class="btn-primary">
+          Invia richiesta
+        </button>
+      </form>
+    </div>
 
   </div>
 
