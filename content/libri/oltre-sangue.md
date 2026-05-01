@@ -14,7 +14,7 @@ weight: 2
 *Questo scritto appartiene ad un paragrafo dedicato che si trova nel mio secondo libro **Oltre sangue e segreto** (alla pp. 35), dove si racconta in modo esoterico e immaginativo lo spostamento energetico e del pensiero legato alla creazione di un nuovo essere vivente. Questa trattazione non ha nessuna pretesa scientifica e riguarda un punto di vista spirituale. Come tale è destinato a chi voglia imparare ad usare l’immaginazione e la fantasia.*
 
 <p class="text-red">
-Questo libro edito ad maggio 2022, il secondo di una serie, è stato scritto a seguito di un lutto molto doloroso e mi ha permesso di donare un riflesso di bellezza e conoscenza ad un’esperienza molto traumatica che mi sono trovata ad affrontare in solitudine e mi ha permesso di aprire un ponte di comunicazione con l’oltre e di ottenere informazioni importanti per sdrammatizzare e comprendere il mistero della morte e che voglio donare al mondo come risorsa di aiuto a superare la paura.
+Questo libro edito a maggio 2022, il secondo di una serie, è stato scritto a seguito di un lutto molto doloroso e mi ha permesso di donare un riflesso di bellezza e conoscenza ad un’esperienza molto traumatica che mi sono trovata ad affrontare in solitudine e mi ha permesso di aprire un ponte di comunicazione con l’oltre e di ottenere informazioni importanti per sdrammatizzare e comprendere il mistero della morte e che voglio donare al mondo come risorsa di aiuto a superare la paura.
 La seconda parte contiene le mie personali visioni ed intuizioni legate al campo del sintomo fisico.
 </p>
 

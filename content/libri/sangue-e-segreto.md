@@ -21,7 +21,7 @@ Questo libro edito ad aprile 2024, il terzo di una serie, è stato scritto in se
 
 <div class="editorial-block">
 
-  <img src="/img/libro3.png" alt="Libro Sangue e Segreto">
+  <img src="/img/sangue-segreto.webp" alt="Libro Sangue e Segreto">
 
 
 

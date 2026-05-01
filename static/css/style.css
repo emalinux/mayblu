@@ -658,6 +658,18 @@ nav {
   margin-bottom: 25px;
 }
 
+.about-subtitle {
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
+}
+
+.about-highlight {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
 .about-text p {
   margin-bottom: 15px;
   max-width: 450px;
@@ -672,7 +684,7 @@ nav {
 }
 
 .about-side {
-  margin-top:80px;
+  margin-top:160px;
 }
 
 .about-image img {
@@ -683,10 +695,9 @@ nav {
   object-fit: cover;
   object-position: center top;
 
-  border-radius: 16px;
+  border-radius: 14px;
 
-  box-shadow:
-    0 12px 35px rgba(0,0,0,0.1);
+box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 
 .about-long {
@@ -717,6 +728,20 @@ nav {
 .btn-about:hover {
   background: var(--accent-gold);
   color: #111;
+}
+
+.about-card {
+  position: relative;
+}
+
+.about-card::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 60px;
+  height: 2px;
+  background: #c9a35b;
 }
 
 /* ============================================================
@@ -2007,6 +2032,29 @@ body.section-metodo {
   align-items: center;
 }
 
+.contatti-layout.single {
+  display: flex;
+  justify-content: center;
+}
+
+.contatti-center {
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+}
+
+.contatti-info {
+  margin-bottom: 40px;
+}
+
+.contatti-form {
+  margin-bottom: 50px;
+}
+
+.contact-bottom {
+  margin-top: 40px;
+}
+
 body.section-contatti {
   background:
     linear-gradient(
@@ -2155,22 +2203,26 @@ body.section-contatti {
   text-transform: uppercase;
   color: #888;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .social-links {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  align-items: center;
+  margin-top: 33px;
 }
 
 .social-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 
   text-decoration: none;
-  color: #333;
+  color: #444;
   opacity: 0.85;
+  align-items: center;
 
   font-size: 0.95rem;
 
@@ -2216,6 +2268,7 @@ body.section-contatti {
   font-size: 0.95rem;
   line-height: 1.9;
   color: #555;
+  text-align: center;
 }
 
 .contact-legal p {
