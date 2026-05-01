@@ -36,7 +36,7 @@ Ogni sezione è stata costruita per rappresentare l’identità della profession
 
 ## 🎯 Caratteristiche principali
 
-```plaintext
+
 ✅ Homepage narrativa a scorrimento
 ✅ Sezioni con sfondi personalizzati
 ✅ Pagina Metodo con struttura editoriale
