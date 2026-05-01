@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>I miei libri on My New Hugo Site</title>
-    <link>http://localhost:1313/libri/</link>
+    <link>//localhost:1313/libri/</link>
     <description>Recent content in I miei libri on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/libri/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/libri/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quando il sangue si esprime attraverso il segreto</title>
-      <link>http://localhost:1313/libri/sangue-segreto/</link>
+      <link>//localhost:1313/libri/sangue-segreto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/libri/sangue-segreto/</guid>
-      <description>&lt;h2 id=&#34;lalbero-un-sistema-perfetto&#34;&gt;L’ALBERO: UN SISTEMA PERFETTO&lt;/h2&gt;&#xA;&lt;h3 id=&#34;come-in-alto-così-in-basso-come-vicino-così-lontano&#34;&gt;Come in alto così in basso, come vicino così lontano&lt;/h3&gt;&#xA;&lt;div class=&#34;editorial-block&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/img/quando.webp&#34; alt=&#34;Libro&#34;&gt;&#xA;&lt;p&gt;Questo scritto è stato estrapolato in alcune parti da un paragrafo dedicato che si trova nel mio primo libro &lt;strong&gt;Quando il sangue si esprime attraverso il segreto&lt;/strong&gt; (pp. 26 cartaceo – pp. 44 ebook). &lt;br&gt; L’obiettivo è riportare alcuni passaggi importanti legati all’Albero Genealogico come sistema, al fine di far comprendere un approccio più intuitivo alla lettura delle radici familiari.&lt;br&gt;&#xA;Ciò che segue non ha alcuna pretesa scientifica, ma è rivolto a chi vuole imparare a guardare le cose in modo immaginativo e intuitivo.&lt;/p&gt;</description>
+      <guid>//localhost:1313/libri/sangue-segreto/</guid>
+      <description>&lt;h2 id=&#34;lalbero-un-sistema-perfetto&#34;&gt;L’ALBERO: UN SISTEMA PERFETTO&lt;/h2&gt;&#xA;&lt;h3 id=&#34;come-in-alto-così-in-basso-come-vicino-così-lontano&#34;&gt;Come in alto così in basso, come vicino così lontano&lt;/h3&gt;&#xA;&lt;div class=&#34;editorial-block&#34;&gt;&#xA;  &lt;img src=&#34;//localhost:1313/img/quando.webp&#34; alt=&#34;Libro&#34;&gt;&#xA;&lt;p&gt;Questo scritto è stato estrapolato in alcune parti da un paragrafo dedicato che si trova nel mio primo libro &lt;strong&gt;Quando il sangue si esprime attraverso il segreto&lt;/strong&gt; (pp. 26 cartaceo – pp. 44 ebook). &lt;br&gt; L’obiettivo è riportare alcuni passaggi importanti legati all’Albero Genealogico come sistema, al fine di far comprendere un approccio più intuitivo alla lettura delle radici familiari.&lt;br&gt;&#xA;Ciò che segue non ha alcuna pretesa scientifica, ma è rivolto a chi vuole imparare a guardare le cose in modo immaginativo e intuitivo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oltre sangue e segreto</title>
-      <link>http://localhost:1313/libri/oltre-sangue/</link>
+      <link>//localhost:1313/libri/oltre-sangue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/libri/oltre-sangue/</guid>
+      <guid>//localhost:1313/libri/oltre-sangue/</guid>
       <description>&lt;h2 id=&#34;madre-terra-e-la-gravidanza&#34;&gt;MADRE TERRA E LA GRAVIDANZA&lt;/h2&gt;&#xA;&lt;h3 id=&#34;inserire-un-testo-a-piacere-per-questa-sezione&#34;&gt;Inserire un testo a piacere per questa sezione&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Questo scritto appartiene ad un paragrafo dedicato che si trova nel mio secondo libro &lt;strong&gt;Oltre sangue e segreto&lt;/strong&gt; (alla pp. 35), dove si racconta in modo esoterico e immaginativo lo spostamento energetico e del pensiero legato alla creazione di un nuovo essere vivente. Questa trattazione non ha nessuna pretesa scientifica e riguarda un punto di vista spirituale. Come tale è destinato a chi voglia imparare ad usare l’immaginazione e la fantasia.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sangue e segreto</title>
-      <link>http://localhost:1313/libri/sangue-e-segreto/</link>
+      <link>//localhost:1313/libri/sangue-e-segreto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/libri/sangue-e-segreto/</guid>
+      <guid>//localhost:1313/libri/sangue-e-segreto/</guid>
       <description>&lt;h2 id=&#34;i-denti-in-cattedra&#34;&gt;I DENTI IN CATTEDRA&lt;/h2&gt;&#xA;&lt;h3 id=&#34;inserire-un-testo-a-piacere-per-questa-sezione&#34;&gt;Inserire un testo a piacere per questa sezione&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Questo scritto è stato estrapolato in alcune parti da un paragrafo dedicato che si trova nel mio terzo libro (Sangue e segreto, alla pp. 186), dove voglio riportare alcuni passi importanti legati ad una visione intuitiva circa la rappresentazione dei nostri avi nella bocca. Quanto scrivo esula da ogni pretesa scientifica e si rivolge ad un modo di pensare immaginativo e intuitivo.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Il linguaggio degli uccelli</title>
-      <link>http://localhost:1313/libri/il-linguaggio-degli-uccelli/</link>
+      <link>//localhost:1313/libri/il-linguaggio-degli-uccelli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/libri/il-linguaggio-degli-uccelli/</guid>
+      <guid>//localhost:1313/libri/il-linguaggio-degli-uccelli/</guid>
       <description>&lt;h2 id=&#34;potenza-dei-numeri-in-parole&#34;&gt;POTENZA DEI NUMERI IN PAROLE&lt;/h2&gt;&#xA;&lt;h3 id=&#34;inserire-un-testo-a-piacere-per-questa-sezione&#34;&gt;Inserire un testo a piacere per questa sezione&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Questo scritto appartiene ad un paragrafo dedicato che si trova nel mio quarto libro &lt;strong&gt;Il linguaggio degli Uccelli&lt;/strong&gt; (alla pp. 72), dove si racconta in modo esoterico e immaginativo il significato dei numeri attraverso l’uso dell’assonanza inconscia. Questo scritto non ha nessuna pretesa scientifica, ma è rivolto a coloro che vogliono imparare ad usare il loro intuito e la fantasia.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
