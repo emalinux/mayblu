@@ -1,6 +1,6 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Maura Balocco'
 
 [markup.goldmark.renderer]
 unsafe = true
