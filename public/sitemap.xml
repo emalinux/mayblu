@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/libri/sangue-segreto/</loc>
+    <loc>http://localhost:1313/libri/sangue-segreto/</loc>
   </url><url>
-    <loc>https://example.org/libri/oltre-sangue/</loc>
+    <loc>http://localhost:1313/libri/oltre-sangue/</loc>
   </url><url>
-    <loc>https://example.org/libri/sangue-e-segreto/</loc>
+    <loc>http://localhost:1313/libri/sangue-e-segreto/</loc>
   </url><url>
-    <loc>https://example.org/libri/il-linguaggio-degli-uccelli/</loc>
+    <loc>http://localhost:1313/libri/il-linguaggio-degli-uccelli/</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://example.org/chi-sono/</loc>
+    <loc>http://localhost:1313/chi-sono/</loc>
   </url><url>
-    <loc>https://example.org/contatti/</loc>
+    <loc>http://localhost:1313/contatti/</loc>
   </url><url>
-    <loc>https://example.org/libri/</loc>
+    <loc>http://localhost:1313/libri/</loc>
   </url><url>
-    <loc>https://example.org/metodo/</loc>
+    <loc>http://localhost:1313/metodo/</loc>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
