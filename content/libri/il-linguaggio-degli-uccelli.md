@@ -1,8 +1,8 @@
 ---
 title: "Il linguaggio degli uccelli"
 subtitle: "Guida Intuitiva all'interpretazione del nome"
-cover: "/img/libro4.png"
-excerpt: "Potenza dei numeri in parole: Trovate al link il contenuto del paragrafo dedicato al mio modo di interpretare i suoni delle parole (Pp. 72)"
+cover: "/img/linguaggio.webp"
+excerpt: "Potenza dei numeri in parole: Trovate al link il contenuto del paragrafo dedicato al mio modo di interpretare i suoni dei numeri. (Pp. 72)"
 estratto: tezsto di prova
 pdf: "/pdf/linguaggio.pdf"
 layout: "single-vetrina"
@@ -11,7 +11,7 @@ weight: 4
 ---
 
 ## POTENZA DEI NUMERI IN PAROLE 
-### Inserire un testo a piacere per questa sezione 
+### Ogni numero è un suono primordiale e si lega alla parola
 
 *Questo scritto appartiene ad un paragrafo dedicato che si trova nel mio quarto libro **Il linguaggio degli Uccelli** (alla pp. 72), dove si racconta in modo esoterico e immaginativo il significato dei numeri attraverso l’uso dell’assonanza inconscia. Questo scritto non ha nessuna pretesa scientifica, ma è rivolto a coloro che vogliono imparare ad usare il loro intuito e la fantasia.*
 
@@ -21,7 +21,7 @@ Questo libro edito a settembre 2025, esula dai precedenti ed in effetti è stato
 
 <div class="editorial-block">
 
-  <img src="/img/linguaggio.webp" alt="Libro Sangue e Segreto">
+  <img src="/img/libro4.png" alt="Libro Sangue e Segreto">
 
 
 
