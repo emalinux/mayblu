@@ -15,26 +15,24 @@ weight: 1
 ## L’ALBERO: UN SISTEMA PERFETTO  
 ### Come in alto così in basso, come vicino così lontano
 
+
+*Questo scritto è stato estrapolato in alcune parti da un paragrafo dedicato che si trova nel mio primo libro **Quando il sangue si esprime attraverso il segreto** (pp. 26 cartaceo – pp. 44 ebook), dove voglio riportare alcuni passi importanti legati all’Albero Genealogico come sistema, al fine di farvi comprendere il mio modo intuitivo di considerare l’importanza delle radici familiari. Ciò che riporto non ha alcuna pretesa scientifica, ma è rivolto a chi vuole imparare a guardare le cose in modo immaginativo e intuitivo.*
+
+
+<p class="text-red">
+Questo libro, edito ad aprile 2019, il primo di una serie, è stato scritto in sei mesi e rappresenta una raccolta di evidenze pratiche e ricerca di anni di lavoro su casi clinici reali, che mi hanno permesso di riscoprire “leggi” inerenti le trasmissioni genealogiche. Ho voluto riportarle con lo scopo di permettere ad ogni persona aperta a questi campi di iniziare la propria scoperta delle radici familiari.
+</p>
+
 <div class="editorial-block">
 
-  <img src="/img/libro1.png" alt="Libro">
+<img src="/img/libro1.png" alt="Libro">
 
+ >“ Ogni persona quando nasce entra a far parte di un sistema allargato che è la propria famiglia. partire dal concepimento, ma in realtà anche prima, nel momento della pianificazione della sua nascita, che darà vita al progetto di un nuovo essere umano e che qualcuno colloca all’incirca 9 mesi prima del concepimento (Brebion – *L’impronta di nascita*).” Ma se l’inconscio non conosce il tempo, chi può definire quando e come?  Per me il tempo è molto relativo e diciamo che il nuovo essere appena formato può attingere a memorie ben più antiche.
 
-Questo scritto è stato estrapolato in alcune parti da un paragrafo dedicato che si trova nel mio primo libro **Quando il sangue si esprime attraverso il segreto** (pp. 26 cartaceo – pp. 44 ebook). <br> L’obiettivo è riportare alcuni passaggi importanti legati all’Albero Genealogico come sistema, al fine di far comprendere un approccio più intuitivo alla lettura delle radici familiari.<br>
-Ciò che segue non ha alcuna pretesa scientifica, ma è rivolto a chi vuole imparare a guardare le cose in modo immaginativo e intuitivo.
 </div>
 
-> Questo libro, edito ad aprile 2019, è il primo di una serie.  
-> E’ stato scritto in 6 mesi a seguito di raccolta di evidenze cliniche e anni di lavoro su casi reali.  
->  
-> L’obiettivo è riscoprire le “leggi” delle trasmissioni genealogiche e offrire a ogni persona uno strumento per iniziare la propria scoperta delle radici familiari.
-
----
-
-> “Ogni persona quando nasce entra a far parte di un sistema allargato che è la propria famiglia...  
->  
-> Per me il tempo è molto relativo: il nuovo essere può attingere a memorie ben più antiche.  
->  
-> L’inconscio non segue un tempo lineare, ma puntiforme.  
->  
-> Non conta solo ciò che accade nei primi mesi, ma tutto il vissuto traumatico, soprattutto quello materno, che tende a ripresentarsi durante la gravidanza.”
+>Questo perché l’inconscio, come spiegherò meglio nel paragrafo a lui dedicato, non ha un tempo lineare come il nostro, ma puntiforme. 
+>
+> Per cui non conta tanto quanto succede in questi fatidici 18 mesi, anche se possono esservi eventi salienti che lasciano un’impronta indelebile nell’embrione in formazione, ma tutto il vissuto traumatico della madre, soprattutto, sembra ripetersi e concentrarsi durante la gravidanza.  
+>
+> Come se ella in quel momento vivesse una sorta di regressione alla sua stessa infanzia e una spinta a rivivere i traumi che non ha superato nei primi sette anni di vita, vissuti con i suoi genitori.

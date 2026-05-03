@@ -9,7 +9,41 @@ body {
   line-height: 1.6;
 }
 
+body.home,
+
 body.kind-home {
+
+  background-color: #f4f1ea;
+
+  background-image:
+
+    linear-gradient(
+
+      rgba(244,241,234,0.65),
+
+      rgba(244,241,234,0.75)
+
+    ),
+
+    url('/img/quando.webp');
+
+  background-size: 950px;   /* 👈 controllata */
+
+  background-repeat: no-repeat;
+
+  background-position: center 120px; /* 👈 centrata sotto hero */
+  background-attachment: fixed;
+
+}
+
+@media (max-width: 768px) {
+  body.home,
+  body.kind-home {
+    background-attachment: scroll;
+  }
+}
+
+/* body.kind-home {
   background:
     linear-gradient(
       to right,
@@ -20,7 +54,7 @@ body.kind-home {
       rgba(244,241,234,0.9) 100%
     ),
     #f4f1ea;
-}
+} */
 
 body.page-chi-sono {
   background-color: #f4f1ea;
@@ -83,13 +117,32 @@ body:not(.kind-home)::after {
   display: none;
 }
 
+body.home {
+  background-color: #0f0f0f;
+
+  background-image:
+    linear-gradient(
+      rgba(244,241,234,0.92),
+      rgba(244,241,234,0.95)
+    ),
+    url('/img/quando.webp');
+
+  background-size: 900px;
+  background-repeat: no-repeat;
+  background-position: center 200px;
+}
+
 main {
   position: relative;
   z-index: 2;
 }
 
 :root {
-  --bg-dark: #0a0a0a;
+  --accent-main: #b76e79;     /* rosa antico */
+  --accent-strong: #1e2a38;   /* blu notte */
+  --accent-soft: #f3e6e8;     /* rosa chiarissimo */
+  --text-main: #2a2a2a;
+   --bg-dark: #0a0a0a;
   --bg-mid: #1a1a1a;
   --bg-light: #f4f1ea;
 
@@ -209,7 +262,27 @@ a:hover {
 
 #backToTop:hover {
   background: #b8924a;
-} 
+}
+
+.content-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  background: rgba(255,255,255,0.78); /* 👈 più trasparente */
+  backdrop-filter: blur(8px);         /* 👈 più blur per compensare */
+
+  padding: 60px 50px;
+  border-radius: 20px;
+
+  box-shadow: 0 25px 70px rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 40px 20px;
+  }
+}
 
 /* ============================================================
    1a. Header
@@ -758,6 +831,19 @@ nav {
 /* ============================================================
    3. Methods Section
 ============================================================ */
+
+.method-wrapper {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(8px);
+
+  border-radius: 14px;
+  padding: 50px 40px;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
 .method-grid {
   display: grid;
@@ -2099,21 +2185,24 @@ body.section-metodo {
   margin-top: 40px;
 }
 
+
 body.section-contatti {
-  background:
-    linear-gradient(
-      to right,
-      rgba(244,241,234,1) 0%,
-      rgba(244,241,234,0.95) 10%,
-      rgba(244,241,234,0.88) 50%,
-      rgba(244,241,234,0.95) 90%,
-      rgba(244,241,234,1) 100%
-    ),
-    url('/img/contact.webp') left center / 50% repeat;
+ background:
+
+  linear-gradient(
+
+    to right,
+
+    rgba(244,241,234,0.6),
+
+    rgba(244,241,234,0.3)
+
+  ),
+
+  url('/img/contactrosa.webp') left center / 50% repeat;
 
   background-attachment: fixed;
 }
-
 
 /* HEADER */
 .contatti-header {
@@ -2274,6 +2363,12 @@ body.section-contatti {
   border-radius: 8px;
 
   transition: all 0.25s ease;
+}
+
+.social-item span {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
 }
 
 .social-item img {
