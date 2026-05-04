@@ -9,40 +9,6 @@ body {
   line-height: 1.6;
 }
 
-body.home,
-
-body.kind-home {
-
-  background-color: #f4f1ea;
-
-  background-image:
-
-    linear-gradient(
-
-      rgba(244,241,234,0.65),
-
-      rgba(244,241,234,0.75)
-
-    ),
-
-    url('/img/quando.webp');
-
-  background-size: 950px;   /* 👈 controllata */
-
-  background-repeat: no-repeat;
-
-  background-position: center 120px; /* 👈 centrata sotto hero */
-  background-attachment: fixed;
-
-}
-
-@media (max-width: 768px) {
-  body.home,
-  body.kind-home {
-    background-attachment: scroll;
-  }
-}
-
 /* body.kind-home {
   background:
     linear-gradient(
@@ -57,7 +23,7 @@ body.kind-home {
 } */
 
 body.page-chi-sono {
-  background-color: #f4f1ea;
+  background-color: #E6C1C3;
   background-image:
     radial-gradient(
       rgba(198, 47, 33, 0.05) 1px,
@@ -145,6 +111,7 @@ main {
    --bg-dark: #0a0a0a;
   --bg-mid: #1a1a1a;
   --bg-light: #f4f1ea;
+   --bg-rosa: #E6C1C3;
 
   --accent-gold: #c9a35b;
   --accent-red: #b23a2f;
@@ -265,17 +232,14 @@ a:hover {
 }
 
 .content-wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.32);  /* 👈 trasparenza controllata */
 
-  background: rgba(255,255,255,0.78); /* 👈 più trasparente */
-  backdrop-filter: blur(8px);         /* 👈 più blur per compensare */
+  backdrop-filter: blur(6px);             /* 👈 effetto vetro figo */
+  -webkit-backdrop-filter: blur(6px);
 
-  padding: 60px 50px;
-  border-radius: 20px;
+  border-radius: 16px;
 
-  box-shadow: 0 25px 70px rgba(0,0,0,0.08);
-  border: 1px solid rgba(255,255,255,0.4);
+  padding: 50px;
 }
 
 @media (max-width: 768px) {
@@ -890,7 +854,7 @@ nav {
 .method-img img {
   width: 100%;
   height: 260px;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
   background: #fff;
   border-radius: 10px;
@@ -902,30 +866,48 @@ nav {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  height: 100%;
 }
 
 .btn-youtube {
-  display: inline-block;
-  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 
-  padding: 12px 22px;
-  border-radius: 30px;
-
-  background: linear-gradient(135deg, #c62f21, #e04b3f);
-  color: #fff;
-
-  font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
-  letter-spacing: 0.2px;
+
+  color: #c62f21;
+  background: none;
 
   text-decoration: none;
-  transition: all 0.25s ease;
 }
 
-.btn-youtube:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(198,47,33,0.3);
+/* icona YouTube */
+.yt-link {
+  display: inline-flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  color: #c62f21;
+  text-decoration: none;
+   margin-top: auto;
+
+  align-self: center;
+}
+
+.yt-link img {
+  width: 20px;
+  height: auto;
+  align-items: center;
+}
+
+.yt-link:hover {
+  text-decoration: underline;
 }
 
 .method-content .btn-youtube {
@@ -950,6 +932,7 @@ nav {
   line-height: 1.65;
   color: #3f3f3f;
   text-align: center;
+  flex-grow: 1;
 }
 
 .method-cta {
@@ -2179,6 +2162,46 @@ body.section-metodo {
 
 .contatti-form {
   margin-bottom: 50px;
+  position: relative;
+}
+
+.contatti-form-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* SPIGA */
+.form-deco {
+
+  position: absolute;
+
+  left: -140px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 170px;
+
+  opacity: 0.6;
+
+  pointer-events: none;
+
+  display: block; /* 👈 FORZA comportamento */
+
+}
+
+@media (max-width: 768px) {
+  .form-deco {
+    display: none;
+  }
+}
+
+/* FORM */
+.contatti-form {
+  position: relative;
+  z-index: 1;
 }
 
 .contact-bottom {
@@ -2199,7 +2222,7 @@ body.section-contatti {
 
   ),
 
-  url('/img/contactrosa.webp') left center / 50% repeat;
+  url('/img/contactrosa.webp') center center / 100% repeat;
 
   background-attachment: fixed;
 }
@@ -2313,6 +2336,20 @@ body.section-contatti {
   grid-column: 1 / -1;
   min-height: 120px;
   resize: vertical;
+}
+
+.contatti-hero-img {
+  margin: 40px 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contatti-hero-img img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 14px;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 /* BOTTONE FORM */
@@ -2535,26 +2572,4 @@ body.section-contatti {
   .contact-gallery img {
     height: 260px;
   }
-}
-
-/* ============================================================
-   Flower Bands
-============================================================ */
-
-.flower-band {
-  height: 140px;
-  background:
-    linear-gradient(
-      rgba(15, 23, 42, 0.8),
-      rgba(15, 23, 42, 0.8)
-    ),
-    url('/img/bandablu.jpg') center/cover no-repeat;
-}
-
-.flower-band-top {
-  margin-top: 140px;
-}
-
-.flower-band-bottom {
-  margin-top: 80px;
 }
