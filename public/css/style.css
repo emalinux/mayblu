@@ -232,9 +232,9 @@ a:hover {
 }
 
 .content-wrapper {
-  background: rgba(255, 255, 255, 0.32);  /* 👈 trasparenza controllata */
+  background: rgba(255, 255, 255, 0.92);  /* 👈 trasparenza controllata */
 
-  backdrop-filter: blur(6px);             /* 👈 effetto vetro figo */
+   backdrop-filter: blur(15px);             /* 👈 effetto vetro figo */
   -webkit-backdrop-filter: blur(6px);
 
   border-radius: 16px;
@@ -261,7 +261,7 @@ a:hover {
   background: rgba(244, 241, 234, 0.75);
   backdrop-filter: blur(10px);
 
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.15);
 }
 
 .header-inner {
@@ -277,24 +277,33 @@ a:hover {
 .logo {
   grid-column: 2;
   text-align: center;
+  position: relative;
+  margin-top: 10px;
+  z-index: 2;
 }
 
 .logo img {
   height: 130px;   /* un filo più grande → ora si vede */
   opacity: 0.9;
+  margin-bottom: 10px;
 }
 
 /* MENU A DESTRA */
 
 nav {
-  grid-column: 3;
-  justify-self: end;
+  grid-column: 1 / 4;
+  justify-self: center;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  justify-content: center; /* 🔥 centra davvero */
+  gap: 35px;
+}
+
+.main-nav a {
+  padding: 10px 0;
 }
 
 .main-nav a,
@@ -1159,10 +1168,11 @@ nav {
 ============================================================ */
 
 body.page-chi-sono {
-  background-color: #f4f1ea;
-  background-image: url('/img/chipois5.webp');
-  background-size: 220px;
-  background-repeat: repeat;
+  background:
+    linear-gradient(
+      rgba(226,188,188,0.9),
+      rgba(226,188,188,0.95)
+    );
 }
 
 .page-about {
@@ -1368,7 +1378,7 @@ body {
 ========================================= */
 
 .page-wrapper {
-  padding-top: 120px;
+  margin-top: 120px;
 }
 
 .book-page {
@@ -2210,21 +2220,23 @@ body.section-metodo {
 
 
 body.section-contatti {
- background:
+  background:
 
-  linear-gradient(
+    /* overlay leggero */
+    linear-gradient(
+      to right,
+      rgba(244,241,234,0.7),
+      rgba(244,241,234,0.85)
+    ),
 
-    to right,
+    /* SINISTRA */
+    url('/img/contact.webp') left center / 35% no-repeat,
 
-    rgba(244,241,234,0.6),
+    /* DESTRA (specchiata) */
+    url('/img/contact.webp') right center / 25% repeat;
 
-    rgba(244,241,234,0.3)
-
-  ),
-
-  url('/img/contactrosa.webp') center center / 100% repeat;
-
-  background-attachment: fixed;
+  
+  background-attachment: fixed, fixed, fixed;
 }
 
 /* HEADER */
