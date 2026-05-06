@@ -9,7 +9,7 @@ body {
   line-height: 1.6;
 }
 
-/* body.kind-home {
+ body.kind-home {
   background:
     linear-gradient(
       to right,
@@ -20,7 +20,7 @@ body {
       rgba(244,241,234,0.9) 100%
     ),
     #f4f1ea;
-} */
+} 
 
 body.page-chi-sono {
   background-color: #E6C1C3;
@@ -81,21 +81,6 @@ body::after {
 body:not(.kind-home)::before,
 body:not(.kind-home)::after {
   display: none;
-}
-
-body.home {
-  background-color: #0f0f0f;
-
-  background-image:
-    linear-gradient(
-      rgba(244,241,234,0.92),
-      rgba(244,241,234,0.95)
-    ),
-    url('/img/quando.webp');
-
-  background-size: 900px;
-  background-repeat: no-repeat;
-  background-position: center 200px;
 }
 
 main {
@@ -899,7 +884,7 @@ nav {
   align-items: center;
   gap: 8px;
 
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 500;
 
   color: #c62f21;
@@ -1168,11 +1153,10 @@ nav {
 ============================================================ */
 
 body.page-chi-sono {
-  background:
-    linear-gradient(
-      rgba(226,188,188,0.9),
-      rgba(226,188,188,0.95)
-    );
+  background-color: #f4f1ea;
+  background-image: url('/img/chipois5.webp');
+  background-size: 220px;
+  background-repeat: repeat;
 }
 
 .page-about {
@@ -1253,8 +1237,8 @@ body.page-chi-sono {
 body.section-libri {
   background:
     linear-gradient(
-      rgba(244,241,234,0.65),
-      rgba(244,241,234,0.65)
+      rgba(244,241,234,0.30),
+      rgba(244,241,234,0.30)
     ),
     url('/img/pallros.webp') center/cover fixed no-repeat;
 }
@@ -1297,7 +1281,8 @@ body.section-libri {
   gap: 50px;
   align-items: center;
 
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(6px);
   padding: 40px;
   border-radius: 20px;
 
@@ -1378,7 +1363,7 @@ body {
 ========================================= */
 
 .page-wrapper {
-  margin-top: 120px;
+  margin-top: 200px;
 }
 
 .book-page {
@@ -2233,7 +2218,7 @@ body.section-contatti {
     url('/img/contact.webp') left center / 35% no-repeat,
 
     /* DESTRA (specchiata) */
-    url('/img/contact.webp') right center / 25% repeat;
+    url('/img/contact.webp') right center / 27% repeat;
 
   
   background-attachment: fixed, fixed, fixed;
