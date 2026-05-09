@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-	<meta name="generator" content="Hugo 0.148.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.147.9"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <title>Maura Balocco</title>
   <link rel="icon" href="/favicon.ico">
@@ -21,31 +21,42 @@
   <div class="header-inner">
 
     <div class="logo">
-      <a href="/">
-        <img src="/img/logom.png" alt="logo">
-      </a>
+  <a href="/">
+    <img src="/img/logom.png" alt="logo">
+  </a>
+</div>
+
+<button class="hamburger" id="hamburger-btn">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+    <nav id="mobile-nav">
+
+  <div class="main-nav">
+
+    <a href="/">HOME</a>
+    <a href="/chi-sono">Chi sono</a>
+    <a href="/metodo">Metodo</a>
+    <a href="/dicono-di-me">Dicono di me</a>
+
+    <div class="dropdown">
+      <a href="/libri/" class="dropdown-trigger">Libri</a>
+
+      <div class="dropdown-menu">
+        <a href="/libri/sangue-segreto/">Quando il sangue si esprime attraverso il Segreto</a>
+        <a href="/libri/oltre-sangue/">Oltre Sangue e Segreto</a>
+        <a href="/libri/sangue-e-segreto/">Sangue e Segreto</a>
+        <a href="/libri/il-linguaggio-degli-uccelli/">Il linguaggio degli uccelli</a>
+      </div>
     </div>
 
-    <nav class="main-nav">
-      <a href="/">HOME</a>
-      <a href="/chi-sono">Chi sono</a>
-      <a href="/metodo">Metodo</a>
-      <a href="/dicono-di-me">Dicono di me</a>
+    <a href="/contatti">Contatti</a>
 
-      <div class="dropdown">
-        <a href="/libri/" class="dropdown-trigger">Libri</a>
+  </div>
 
-        <div class="dropdown-menu">
-          <a href="/libri/sangue-segreto/">Quando il sangue si esprime attraverso il Segreto</a>
-          <a href="/libri/oltre-sangue/">Oltre Sangue e Segreto</a>
-          <a href="/libri/sangue-e-segreto/">Sangue e Segreto</a>
-          <a href="/libri/il-linguaggio-degli-uccelli/">Il linguaggio degli uccelli</a>
-        </div>
-      </div>
-
-      <a href="/contatti">Contatti</a>
-
-    </nav>
+</nav>
 
   </div>
 
@@ -375,6 +386,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+</script>
+<script>
+  const hamburger = document.getElementById('hamburger-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+  });
 </script>
 </body>
 </html>

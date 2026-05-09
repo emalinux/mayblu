@@ -59,5 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+<script>
+  const hamburger = document.getElementById('hamburger-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>

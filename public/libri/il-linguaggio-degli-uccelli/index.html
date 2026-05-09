@@ -20,31 +20,41 @@
   <div class="header-inner">
 
     <div class="logo">
+      <button class="hamburger" id="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <a href="/">
         <img src="/img/logom.png" alt="logo">
       </a>
     </div>
 
-    <nav class="main-nav">
-      <a href="/">HOME</a>
-      <a href="/chi-sono">Chi sono</a>
-      <a href="/metodo">Metodo</a>
-      <a href="/dicono-di-me">Dicono di me</a>
+    <nav id="mobile-nav">
 
-      <div class="dropdown">
-        <a href="/libri/" class="dropdown-trigger">Libri</a>
+  <div class="main-nav">
 
-        <div class="dropdown-menu">
-          <a href="/libri/sangue-segreto/">Quando il sangue si esprime attraverso il Segreto</a>
-          <a href="/libri/oltre-sangue/">Oltre Sangue e Segreto</a>
-          <a href="/libri/sangue-e-segreto/">Sangue e Segreto</a>
-          <a href="/libri/il-linguaggio-degli-uccelli/">Il linguaggio degli uccelli</a>
-        </div>
+    <a href="/">HOME</a>
+    <a href="/chi-sono">Chi sono</a>
+    <a href="/metodo">Metodo</a>
+    <a href="/dicono-di-me">Dicono di me</a>
+
+    <div class="dropdown">
+      <a href="/libri/" class="dropdown-trigger">Libri</a>
+
+      <div class="dropdown-menu">
+        <a href="/libri/sangue-segreto/">Quando il sangue si esprime attraverso il Segreto</a>
+        <a href="/libri/oltre-sangue/">Oltre Sangue e Segreto</a>
+        <a href="/libri/sangue-e-segreto/">Sangue e Segreto</a>
+        <a href="/libri/il-linguaggio-degli-uccelli/">Il linguaggio degli uccelli</a>
       </div>
+    </div>
 
-      <a href="/contatti">Contatti</a>
+    <a href="/contatti">Contatti</a>
 
-    </nav>
+  </div>
+
+</nav>
 
   </div>
 
@@ -227,6 +237,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+</script>
+<script>
+  const hamburger = document.getElementById('hamburger-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+  });
 </script>
 </body>
 </html>

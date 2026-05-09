@@ -20,31 +20,42 @@
   <div class="header-inner">
 
     <div class="logo">
-      <a href="/">
-        <img src="/img/logom.png" alt="logo">
-      </a>
+  <a href="/">
+    <img src="/img/logom.png" alt="logo">
+  </a>
+</div>
+
+<button class="hamburger" id="hamburger-btn">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+    <nav id="mobile-nav">
+
+  <div class="main-nav">
+
+    <a href="/">HOME</a>
+    <a href="/chi-sono">Chi sono</a>
+    <a href="/metodo">Metodo</a>
+    <a href="/dicono-di-me">Dicono di me</a>
+
+    <div class="dropdown">
+      <a href="/libri/" class="dropdown-trigger">Libri</a>
+
+      <div class="dropdown-menu">
+        <a href="/libri/sangue-segreto/">Quando il sangue si esprime attraverso il Segreto</a>
+        <a href="/libri/oltre-sangue/">Oltre Sangue e Segreto</a>
+        <a href="/libri/sangue-e-segreto/">Sangue e Segreto</a>
+        <a href="/libri/il-linguaggio-degli-uccelli/">Il linguaggio degli uccelli</a>
+      </div>
     </div>
 
-    <nav class="main-nav">
-      <a href="/">HOME</a>
-      <a href="/chi-sono">Chi sono</a>
-      <a href="/metodo">Metodo</a>
-      <a href="/dicono-di-me">Dicono di me</a>
+    <a href="/contatti">Contatti</a>
 
-      <div class="dropdown">
-        <a href="/libri/" class="dropdown-trigger">Libri</a>
+  </div>
 
-        <div class="dropdown-menu">
-          <a href="/libri/sangue-segreto/">Quando il sangue si esprime attraverso il Segreto</a>
-          <a href="/libri/oltre-sangue/">Oltre Sangue e Segreto</a>
-          <a href="/libri/sangue-e-segreto/">Sangue e Segreto</a>
-          <a href="/libri/il-linguaggio-degli-uccelli/">Il linguaggio degli uccelli</a>
-        </div>
-      </div>
-
-      <a href="/contatti">Contatti</a>
-
-    </nav>
+</nav>
 
   </div>
 
@@ -62,10 +73,10 @@
       Un percorso personale che è diventato strumento di aiuto per gli altri.
     </p>
 
-   <div class="about-long">
+    <div class="about-long">
 
-  <div class="about-text">
-    <h1 id="maura-balocco-mayblu">MAURA BALOCCO &ldquo;mayblu&rdquo;</h1>
+      <div class="about-text">
+        <h1 id="maura-balocco-mayblu">MAURA BALOCCO &ldquo;mayblu&rdquo;</h1>
 <p>Mi chiamo Maura Balocco, sono nata ad Alba nel 1977, Dott.ssa in Psicologia Clinica laureata
 all’Università di Torino nell’anno 2014, (Albo Psicologi Piemonte n. 7987).</p>
 <p>Il mio percorso è stato eclettico ed intuitivo e nasce a seguito dell’esigenza di trasmettere agli altri il
@@ -78,29 +89,18 @@ sé stessi che diventa poi un eccellente strumento di aiuto verso il prossimo.</
 orientandomi ad una profonda rinascita interiore e permettendomi di trasformare la mia intensa
 paura in uno strumento di aiuto potente.</p>
 
+      </div>
+
+      <div class="about-side">
+        <img src="/img/maura.png" alt="Maura Balocco">
+      </div>
+        </div>
+          <a href="/contatti" class="btn">Prenota un  colloquio</a>
+        </div>
+    </div>
+    
   </div>
 
-  <div class="about-side">
-    <img src="/img/maura.png" alt="Maura Balocco">
-  </div>
-
-</div>
-
-<div class="about-cta-group">
-
-  <a href="/contatti" class="btn-primary">
-    Prenota un colloquio
-  </a>
-
-  <a href="https://www.youtube.com/watch?v=xPB6siATFq8"
-     target="_blank"
-     rel="noopener"
-     class="btn-secondary">
-    ▶ Guarda il video di presentazione
-  </a>
-
-</div>
-  
 </section>
 
 
@@ -181,6 +181,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+</script>
+<script>
+  const hamburger = document.getElementById('hamburger-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+  });
 </script>
 </body>
 </html>
