@@ -1,0 +1,42 @@
+<section class="testimonials-section">
+  <div class="floating-light"></div>
+
+  <div class="testimonials-overlay">
+    <div class="testimonials-container">
+
+      <div class="hero-overlay">
+
+        <div class="section-heading">
+          <h2>Dicono di me</h2>
+
+          <p>
+            Esperienze, trasformazioni e percorsi raccontati
+            da chi ha scelto di intraprendere questo cammino.
+          </p>
+        </div>
+
+        <div class="mission-box">
+          <h3>LA MIA MISSION?</h3>
+
+          <p>
+            Creare esseri umani liberi e indipendenti.
+            Insegnando loro a dialogare in modo costruttivo
+            con l’inconscio, che tutto domina per il 90%
+            della nostra vita.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="testimonials-grid">
+        {{ range site.Data.testimonianze }}
+        <article class="testimonial-card">
+          <p>“{{ .testo }}”</p>
+          <span>— {{ .firma }}</span>
+        </article>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</section>
