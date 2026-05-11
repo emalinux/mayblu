@@ -1,5 +1,6 @@
 ---
 title: "Grazie"
+type: "grazie"
 ---
 
 # Grazie 🌿
