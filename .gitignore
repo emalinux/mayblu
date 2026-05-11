@@ -6,3 +6,4 @@ node_modules
 netlify/functions/assets
 # Local Netlify folder
 .netlify
+private/ebook.pdf
