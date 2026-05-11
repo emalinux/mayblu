@@ -1,0 +1,25 @@
+{
+  "name": "may2",
+  "version": "1.0.0",
+  "description": "Sito ufficiale della **Dott.ssa Maura Balocco**.   Uno spazio digitale progettato per accompagnare percorsi di consapevolezza, attraverso parola, psicosomatica e lettura simbolica dell’esperienza umana.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emalinux/mayblu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/emalinux/mayblu/issues"
+  },
+  "homepage": "https://github.com/emalinux/mayblu#readme",
+  "dependencies": {
+    "resend": "^6.12.3",
+    "stripe": "^22.1.1"
+  }
+}

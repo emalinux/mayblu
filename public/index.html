@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-	<meta name="generator" content="Hugo 0.148.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.147.9"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <title>Maura Balocco</title>
   <link rel="icon" href="/favicon.ico">
@@ -291,8 +291,15 @@ Da qui nasce il mio approccio: un cammino che integra esperienza, intuizione e a
         Se senti che è il momento giusto, puoi scrivermi senza impegno.
       </p>
 
-      <form name="contatti-home" method="POST" data-netlify="true">
+      <form name="contatti-home" method="POST" data-netlify="true" action="/grazie" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contatti-home">
+
+        <p hidden>
+          <label>
+            Non compilare:
+            <input name="bot-field">
+          </label>
+        </p>
 
         <input type="text" name="nome" placeholder="Il tuo nome" required>
         <input type="email" name="email" placeholder="Email" required>

@@ -7,3 +7,6 @@
   
 [build.environment]
   HUGO_ENV = "production"
+
+[functions]
+  node_bundler = "esbuild"  
