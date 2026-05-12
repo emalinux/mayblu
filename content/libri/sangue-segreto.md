@@ -7,7 +7,7 @@ excerpt: "L’albero, un sistema perfetto: trovate al link il contenuto del para
 
 layout: "single-vendita"
 prezzo: 22
-stripe_link: "https://buy.stripe.com/XXXX"
+stripe_link: "https://buy.stripe.com/7sYfZjdwm8Gtf3qbnIes000"
 pdf: "/pdf/quando-sangue-segreto.pdf"
 weight: 1
 ---
