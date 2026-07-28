@@ -10,7 +10,7 @@ exports.handler = async (event) => {
   try {
     const sig = event.headers["stripe-signature"] || event.headers["Stripe-Signature"];
 
-    // Gestione corretta del payload per Netlify Serverless
+    // Gestione raw body per Netlify
     const rawBody = event.isBase64Encoded
       ? Buffer.from(event.body, "base64").toString("utf8")
       : event.body;
@@ -21,31 +21,34 @@ exports.handler = async (event) => {
       process.env.STRIPE_WEBHOOK_SECRET
     );
 
-    // PAGAMENTO COMPLETATO
+    console.log("EVENTO RICEVUTO:", stripeEvent.type);
+
     if (stripeEvent.type === "checkout.session.completed") {
       const session = stripeEvent.data.object;
-      const customerEmail = session.customer_details?.email;
+      const customerEmail = session.customer_details?.email || session.customer_email;
+
+      console.log("DESTINATARIO EMAIL:", customerEmail);
 
       if (!customerEmail) {
-        throw new Error("Email cliente non trovata nella sessione Stripe.");
+        throw new Error("Nessun indirizzo email trovato nella sessione di checkout.");
       }
 
-      // Risoluzione path sicura in ambiente Netlify
-      const pdfPath = path.resolve(__dirname, "../../private/ebook.pdf");
+      // Path corretto e compatibile con incluso_files in netlify.toml
+      const pdfPath = path.join(process.cwd(), "private", "ebook.pdf");
 
-      console.log("Tentativo lettura PDF PATH:", pdfPath);
+      console.log("LETTURA FILE DA:", pdfPath);
 
       if (!fs.existsSync(pdfPath)) {
-        throw new Error(`File PDF non trovato sul server al percorso: ${pdfPath}`);
+        throw new Error(`File non trovato al percorso: ${pdfPath}`);
       }
 
       const pdfBuffer = fs.readFileSync(pdfPath);
-      const pdfBase64 = pdfBuffer.toString("base64");
 
-      // INVIO EMAIL VIA RESEND
-      const response = await resend.emails.send({
+      console.log("INVIO CON RESEND IN CORSO...");
+
+      const { data, error } = await resend.emails.send({
         from: process.env.EMAIL_FROM,
-        to: customerEmail,
+        to: [customerEmail],
         subject: "Il tuo ebook è pronto ✨",
         html: `
           <h2>Grazie per il tuo acquisto</h2>
@@ -55,12 +58,17 @@ exports.handler = async (event) => {
         attachments: [
           {
             filename: "ebook.pdf",
-            content: pdfBase64,
+            content: pdfBuffer,
           },
         ],
       });
 
-      console.log("EMAIL INVIATA CON SUCCESSO:", response);
+      if (error) {
+        console.error("ERRORE DA RESEND:", error);
+        throw new Error(`Resend Error: ${error.message}`);
+      }
+
+      console.log("ESITO RESEND SUCCESS:", data);
     }
 
     return {
@@ -71,7 +79,6 @@ exports.handler = async (event) => {
   } catch (err) {
     console.error("ERRORE WEBHOOK STRIPE:", err.message);
 
-    // Dettaglio errore nei log di Netlify per debug rapido
     return {
       statusCode: 400,
       body: `Webhook Error: ${err.message}`,
