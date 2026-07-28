@@ -4,9 +4,11 @@
 
 [context.production.environment]
   HUGO_VERSION = "0.147.9"
-  
+
 [build.environment]
   HUGO_ENV = "production"
 
 [functions]
-  node_bundler = "esbuild"  
+  node_bundler = "esbuild"
+  included_files = ["private/**"]
+
