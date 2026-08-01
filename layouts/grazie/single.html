@@ -1,19 +1,47 @@
 {{ define "main" }}
-
-<section class="page-grazie">
-
-  <div class="grazie-card">
-
-    <h1>{{ .Title }} 🌿</h1>
-
-    <div class="grazie-content">
-      {{ .Content }}
+<div style="min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 20px 10px;">
+  <div style="max-width: 550px; width: 100%; background: #ffffff; border-radius: 16px; padding: 32px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 1px solid #eaeaea; margin: 0 auto; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;">
+    
+    <!-- Icona Check Verde -->
+    <div style="width: 50px; height: 50px; background-color: #d1fae5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto;">
+      <svg xmlns="http://www.w3.org/2000/svg" style="width: 28px; height: 28px; color: #059669;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+      </svg>
     </div>
 
-    <a href="/" class="btn">Torna alla home</a>
+    <h1 style="font-size: 24px; font-weight: 800; color: #111827; margin-bottom: 12px; line-height: 1.2; font-family: system-ui, -apple-system, sans-serif !important;">
+      Grazie per il tuo acquisto!
+    </h1>
+    
+    <p style="font-size: 15px; color: #4b5563; margin-bottom: 24px; line-height: 1.5; font-family: system-ui, -apple-system, sans-serif !important;">
+      Il pagamento è andato a buon fine. Puoi scaricare subito la tua copia dell'eBook cliccando sul pulsante qui sotto.
+    </p>
+
+    <!-- Pulsante Download -->
+    <div style="margin-bottom: 24px;">
+      <a href="/smhfgrghdr7r3fdli/ebook.pdf" download="Quando-il-sangue-si-esprime-attraverso-il-segreto.pdf" 
+         style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: #b91c1c; color: #ffffff; font-weight: 700; font-size: 15px; padding: 14px 24px; border-radius: 10px; text-decoration: none; box-shadow: 0 4px 12px rgba(185,28,28,0.3); font-family: system-ui, -apple-system, sans-serif !important; font-style: normal !important;">
+        <svg xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+        SCARICA L'EBOOK (PDF)
+      </a>
+    </div>
+
+    <!-- Tettoia Info UX per Mobile -->
+    <div style="background-color: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 14px; text-align: left; font-size: 13px; color: #0369a1; margin-bottom: 20px; line-height: 1.4; font-family: system-ui, -apple-system, sans-serif !important;">
+      <strong>Nota utile per il download:</strong>
+      <ul style="margin-top: 6px; margin-bottom: 0; padding-left: 18px;">
+        <li>Su <strong>iPhone / iPad</strong> troverai il file nell'app <em>File</em> (cartella Download).</li>
+        <li>Su <strong>Android</strong> lo troverai nelle notifiche o nell'app <em>Gestione File / Download</em>.</li>
+      </ul>
+    </div>
+
+    <!-- Contatti Assistenza Tecnica -->
+    <p style="font-size: 12px; color: #9ca3af; margin: 0; font-family: system-ui, -apple-system, sans-serif !important; font-style: normal !important;">
+      Hai problemi con il download? Contattaci direttamente a <a href="mailto:manuel.assembler@gmail.com" style="color: #4b5563; text-decoration: underline; font-family: system-ui, -apple-system, sans-serif !important; font-style: normal !important;">manuel.assembler@gmail.com</a>
+    </p>
 
   </div>
-
-</section>
-
+</div>
 {{ end }}
